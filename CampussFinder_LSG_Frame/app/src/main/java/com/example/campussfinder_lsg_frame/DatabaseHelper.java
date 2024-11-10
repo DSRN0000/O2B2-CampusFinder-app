@@ -9,11 +9,13 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import android.util.Log;
+import io.github.cdimascio.dotenv.Dotenv;
 
 public class DatabaseHelper extends AsyncTask<Void, Void, List<String>> {
-    private static final String DB_URL = "jdbc:mysql://o2b2-campusfinder.cruwys2ouxur.ap-northeast-2.rds.amazonaws.com:3306/campusfinder";
-    private static final String DB_USER = "admin";
-    private static final String DB_PASSWORD = "1234567890";
+    private static final Dotenv dotenv = Dotenv.configure().load();
+    private static final String DB_URL = dotenv.get("DB_URL");
+    private static final String DB_USER = dotenv.get("DB_USER");
+    private static final String DB_PASSWORD = dotenv.get("DB_PASSWORD");
 
     private String queryType;
     private String searchQuery;
