@@ -67,6 +67,7 @@ public class AcademicScheduleActivity extends AppCompatActivity {
     }
 
     // 학사일정 데이터를 로드하여 테이블에 추가하는 메서드
+    // 학사일정 데이터를 로드하여 테이블에 추가하는 메서드
     private void loadAcademicSchedule() {
         ApiService apiService = RetrofitInstance.getApiService();
         Call<List<AcademicSchedule>> call = apiService.getAcademicSchedule();
@@ -80,7 +81,7 @@ public class AcademicScheduleActivity extends AppCompatActivity {
 
                     // 테이블 헤더 추가
                     TableRow headerRow = new TableRow(AcademicScheduleActivity.this);
-                    headerRow.addView(createTextView("요일", true));
+                    headerRow.addView(createTextView("날짜", true));
                     headerRow.addView(createTextView("학사일정", true));
                     academicScheduleTable.addView(headerRow);
 
@@ -93,11 +94,12 @@ public class AcademicScheduleActivity extends AppCompatActivity {
 
                             // 현재 달과 동일한 데이터만 표시
                             if (scheduleCalendar.get(Calendar.MONTH) == calendar.get(Calendar.MONTH)) {
-                                String dayOfWeek = new SimpleDateFormat("E", Locale.getDefault()).format(date); // 요일 추출
+                                // 날짜 포맷을 "MM월 dd일 (E)" 형태로 설정
+                                String formattedDate = new SimpleDateFormat("dd일 (E)", Locale.getDefault()).format(date);
                                 TableRow row = new TableRow(AcademicScheduleActivity.this);
 
-                                // 요일과 학사일정 셀 추가
-                                row.addView(createTextView(dayOfWeek, false));
+                                // 날짜와 학사일정 셀 추가
+                                row.addView(createTextView(formattedDate, false));
                                 row.addView(createTextView(schedule.getSchedule(), false));
                                 academicScheduleTable.addView(row);
                             }
@@ -117,6 +119,7 @@ public class AcademicScheduleActivity extends AppCompatActivity {
             }
         });
     }
+
 
     // 동적으로 텍스트뷰를 생성하는 메서드 (헤더와 데이터 셀 구분)
     private TextView createTextView(String text, boolean isHeader) {
