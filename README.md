@@ -4,6 +4,7 @@
 1. AcademicSchedule, AcademicSAcheduleActivity,DatabaseHelper.java 수정<br/>
 2. server.js 수정<br/>
 3. AcademicSchdule 테이블 속성 수정{ start_date(DATE) , end_date(DATE), schedule(VARCHAR 255) }<br/><br/>
+4. .env 추가
 
 **2024-11-06 1차수정** <br/><br/>
 1.뒤로가기 버튼 무응답 오류 수정.<br/>
