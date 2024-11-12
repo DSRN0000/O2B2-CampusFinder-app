@@ -1,3 +1,5 @@
+
+
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -33,7 +35,7 @@ android {
 }
 
 dependencies {
-
+    implementation("io.github.cdimascio:dotenv-kotlin:6.3.1")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
