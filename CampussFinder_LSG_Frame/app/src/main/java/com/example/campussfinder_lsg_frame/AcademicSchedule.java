@@ -6,7 +6,7 @@ public class AcademicSchedule {
     private String start_date;
     private String end_date;
 
-    // Getter 메서드
+// Getter 메서드
 //    public String getDate() {
 //        return date;
 //    }
