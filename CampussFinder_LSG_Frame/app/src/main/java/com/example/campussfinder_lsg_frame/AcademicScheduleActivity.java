@@ -41,15 +41,15 @@ public class AcademicScheduleActivity extends AppCompatActivity {
 
         // 캘린더 객체 초기화
         calendar = Calendar.getInstance();
-        setCurrentMonth();
-        loadAcademicSchedule();
+        setCurrentMonth(); // 현재 월 설정
+        loadAcademicSchedule(); // 현재 월의 학사일정 데이터 로드
     }
 
-    // 현재 달을 설정하는 메서드
+    // 현재 월을 설정하는 메서드
     private void setCurrentMonth() {
-        SimpleDateFormat monthFormat = new SimpleDateFormat("MM월", Locale.getDefault());
-        String currentMonth = monthFormat.format(calendar.getTime());
-        currentMonthText.setText(currentMonth);
+        SimpleDateFormat monthYearFormat = new SimpleDateFormat("yyyy년 MM월", Locale.getDefault());
+        String currentMonthYear = monthYearFormat.format(calendar.getTime());
+        currentMonthText.setText(currentMonthYear);
     }
 
     // 이전 달 버튼 클릭 메서드
