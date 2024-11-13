@@ -7,7 +7,6 @@
 
     <ImageButton
         android:id="@+id/backButton"
-
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_margin="16dp"
@@ -45,48 +44,51 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/rect_button_background" />
 
-    <!-- 검색 결과를 표시할 TableLayout -->
-    <TableLayout
-        android:id="@+id/roomInfoTable"
+    <!-- 검색 결과를 표시할 ScrollView로 감싼 TableLayout -->
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:stretchColumns="1"
-        android:divider="@android:color/darker_gray"
+        android:layout_marginTop="16dp">
 
-        >
+        <TableLayout
+            android:id="@+id/roomInfoTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:divider="@android:color/darker_gray">
 
-        <!-- 헤더 행 -->
+            <!-- 헤더 행 -->
+            <TableRow>
+                <TextView
+                    android:text="건물명"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@android:color/white"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
 
-        <TableRow>
-            <TextView
-                android:text="건물명"
-                android:padding="8dp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:background="@android:color/white"
-                android:layout_width="0dp"
-                android:layout_weight="1"/>
+                <TextView
+                    android:text="장소"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@android:color/white"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
 
-            <TextView
-                android:text="장소"
-                android:padding="8dp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:background="@android:color/white"
-                android:layout_width="0dp"
-                android:layout_weight="1"/>
+                <TextView
+                    android:text="층"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@android:color/white"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
 
-            <TextView
-                android:text="층"
-                android:padding="8dp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:background="@android:color/white"
-                android:layout_width="0dp"
-                android:layout_weight="1"/>
-        </TableRow>
+        </TableLayout>
 
-    </TableLayout>
+    </ScrollView>
 
 </LinearLayout>
