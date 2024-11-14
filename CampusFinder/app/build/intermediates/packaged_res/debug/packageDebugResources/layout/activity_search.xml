@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <ImageButton
+        android:id="@+id/backButton"
+
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="뒤로 가기 버튼"
+        android:layout_gravity="start" />
+
+    <!-- 상단 로고 -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Campus Finder Logo"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- 검색 필드 -->
+    <EditText
+        android:id="@+id/searchField"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="강의실 검색"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- 검색 버튼 -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="검색"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rect_button_background" />
+
+    <!-- 검색 결과를 표시할 TableLayout -->
+    <TableLayout
+        android:id="@+id/roomInfoTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:stretchColumns="1"
+        android:divider="@android:color/darker_gray"
+
+        >
+
+        <!-- 헤더 행 -->
+
+        <TableRow>
+            <TextView
+                android:text="건물명"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="장소"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="층"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

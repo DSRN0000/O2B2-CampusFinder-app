@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Top row with 7 boxes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="11"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/box_border"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="501강의실" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/box_border"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="502강의실" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:orientation="vertical"
+            android:background="@drawable/box_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="W.C\n(남)" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="W.C\n(여)" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/box_border"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="엘리베이터" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/box_border"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="504강의실" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/box_border"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="고시실" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:background="@drawable/box_border"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="505강의실" />
+
+    </LinearLayout>
+
+    <!-- Bottom row with 17 boxes -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="always">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="교수실" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="교수실" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="교수실" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="교수실" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="교수실" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="교수실" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="콘텐츠교실\n영미역사문화" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="공연영상\n실습실" />
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="503강의실" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="창업교실\n문예출판" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="정독실" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="연구센터\n문화콘텐츠" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="교수실" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="교수실" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="교수실" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="스토리텔링교실\n콘텐츠제작\n및 공연" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:background="@drawable/box_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:text="대안문화\n연구소" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
+
