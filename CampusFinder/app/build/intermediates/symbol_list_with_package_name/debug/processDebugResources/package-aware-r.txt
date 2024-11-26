@@ -3170,6 +3170,9 @@ id btnPinpoint
 id btnPrime
 id btnSe
 id btnSearchPath
+id btn_hellobus
+id btn_outbound_routes
+id btn_pickup_locations
 id button
 id buttonPanel
 id cache_measures
@@ -3293,9 +3296,6 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView2
-id imageView3
-id imageView4
 id immediateStop
 id included
 id indeterminate
@@ -3527,8 +3527,14 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
+id text1
 id text2
+id text3
+id text4
+id text5
+id text6
 id textEnd
+id textSI
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart

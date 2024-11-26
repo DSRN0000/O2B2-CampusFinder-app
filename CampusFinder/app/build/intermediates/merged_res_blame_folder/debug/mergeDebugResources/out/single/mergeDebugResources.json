@@ -100,10 +100,6 @@
         "source": "C:\\Users\\현수민\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\se.jpg"
     },
     {
-        "merged": "com.example.campusFinder.app-debug-4:/layout_activity_iksan_bus.xml.flat",
-        "source": "com.example.campusFinder.app-main-6:/layout/activity_iksan_bus.xml"
-    },
-    {
         "merged": "C:\\Users\\현수민\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\현수민\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
     },
@@ -130,6 +126,10 @@
     {
         "merged": "C:\\Users\\현수민\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\drawable_gonghak.jpg.flat",
         "source": "C:\\Users\\현수민\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\gonghak.jpg"
+    },
+    {
+        "merged": "com.example.campusFinder.app-debug-4:/layout_activity_out_bus.xml.flat",
+        "source": "com.example.campusFinder.app-main-6:/layout/activity_out_bus.xml"
     },
     {
         "merged": "C:\\Users\\현수민\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",
