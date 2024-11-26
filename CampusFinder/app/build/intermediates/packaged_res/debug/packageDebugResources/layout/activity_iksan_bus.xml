@@ -4,37 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-<!--    tools:context=".iksanBus">-->
+    tools:context=".IksanBus">
 
     <!-- 로고 이미지뷰 (중앙 정렬 유지) -->
-
-    <ImageButton
-        android:id="@+id/backButton"
-
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_back"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="뒤로 가기 버튼"
-        android:layout_gravity="start"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="250dp"
+        android:layout_width="410dp"
         android:layout_height="150dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="로고 이미지"
         app:srcCompat="@drawable/logo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"/>
+
 
     <!-- 텍스트 왼쪽 정렬 -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="뒤로가기 버튼"
+        android:src="@drawable/ic_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -50,15 +49,17 @@
     <!-- 텍스트 아래에 위치한 버튼 왼쪽 정렬 -->
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="180dp"
+        android:layout_height="54dp"
         android:layout_marginStart="16dp"
-        android:background="#88b14b"
+        android:layout_marginTop="8dp"
+        style="@style/CustomButton"
         android:text="운행노선 지도로 보기>"
-        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
+
+
+
 
     <!-- 스크롤 뷰 추가 -->
     <ScrollView
@@ -71,35 +72,676 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <!-- 스크롤 가능한 이미지들을 담을 레이아웃 -->
-        <LinearLayout
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingStart="6dp">
+            android:stretchColumns="1"
+            android:padding="16dp"
+            android:background="#d7e3c5">
 
-            <ImageView
-                android:id="@+id/imageView2"
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:padding="16dp"
+                    android:background="#d7e3c5">
+                    <!-- Header Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="승차장소"
+                            android:textSize="16sp"
+                            android:background="#4C8C2A"
+                            android:textColor="#ffffff"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="오전"
+                            android:textSize="16sp"
+                            android:background="#4C8C2A"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:layout_span="4" />
+
+                    </TableRow>
+
+                    <!-- Sub-header Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text=""
+                            android:background="#d7e3c5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="1회차"
+                            android:gravity="center"
+                            android:background="#eaf1db" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="2회차"
+                            android:gravity="center"
+                            android:background="#eaf1db" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="3회차"
+                            android:gravity="center"
+                            android:background="#eaf1db" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="4회차"
+                            android:gravity="center"
+                            android:background="#eaf1db" />
+                    </TableRow>
+
+                    <!-- Data Rows -->
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="출발(정문 통학버스 승강장)"
+                            android:background="#f4f9e9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text=""
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="11:00"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="익산역 앞(시내버스 승강장)"
+                            android:background="#f4f9e9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="8:23"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="9:00"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="10:00"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="11:10"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="버스터미널(별밤 무인호텔 앞)"
+                            android:background="#f4f9e9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="8:28"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="9:05"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="10:05"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="11:15"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="익산역 건너편(동아의원 앞)"
+                            android:background="#f4f9e9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="8:31"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="9:08"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="10:09" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="11:18"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="도착(정문 통학버스 승강장)"
+                            android:background="#f4f9e9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="8:43"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="9:20"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="10:20"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="11:30"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:padding="16dp"
+                    android:background="#d7e3c5">
+
+
+
+                    <!-- Header Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="승차장소"
+                            android:textSize="16sp"
+                            android:background="#4C8C2A"
+                            android:textColor="#ffffff"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="오후"
+                            android:textSize="16sp"
+                            android:background="#4C8C2A"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:layout_span="5" />
+                    </TableRow>
+
+                    <!-- Sub-header Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text=""
+                            android:background="#d7e3c5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="1회차"
+                            android:gravity="center"
+                            android:background="#eaf1db" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="2회차"
+                            android:gravity="center"
+                            android:background="#eaf1db" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="3회차"
+                            android:gravity="center"
+                            android:background="#eaf1db" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="4회차"
+                            android:gravity="center"
+                            android:background="#eaf1db" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="5회차"
+                            android:gravity="center"
+                            android:background="#eaf1db" />
+                    </TableRow>
+
+                    <!-- Data Rows -->
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="출발(정문 통학버스 승강장)"
+                            android:background="#f4f9e9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="13:00"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="14:00"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="15:00"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="16:00"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="17:00"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="익산역 앞(시내버스 승강장)"
+                            android:background="#f4f9e9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="13:10"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="14:10"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="15:10"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="16:10"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="17:10"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="버스터미널(별밤 무인호텔 앞)"
+                            android:background="#f4f9e9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="13:15"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="14:15"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="15:15"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="16:15"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="17:15"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="익산역 건너편(동아의원 앞)"
+                            android:background="#f4f9e9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="13:18"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="14:18"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="15:18"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="16:18"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="17:18"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="도착(정문 통학버스 승강장)"
+                            android:background="#f4f9e9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="13:30"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="14:30"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="15:30"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="16:30"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="17:30"
+                            android:gravity="center"
+                            android:background="#ffffff" />
+                    </TableRow>
+
+                </TableLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="314dp"
-                android:contentDescription="노선 이미지 1"
-                app:srcCompat="@drawable/iksan_bus" />
-            <ImageView
-                android:id="@+id/imageView4"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="버스이용시 유의사항"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="314dp"
-                android:contentDescription="노선 이미지 2"
-                app:srcCompat="@drawable/iksan_bus3" />
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="(승차장소의 상호명은 변경될 수 있음.)"
+                android:textSize="14sp"
+                android:gravity="center" />
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="300dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="16dp"
-                android:contentDescription="노선 이미지 2"
-                app:srcCompat="@drawable/iksan_bus2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="(교통상황에 따라 시간이 지연될 수 있음.)"
+                android:textSize="14sp"
+                android:gravity="center" />
 
-            <!-- 추가 이미지들을 여기에 배치 -->
-        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="(표시된 각 시간은 승차장소에서 버스가 출발하는 시간임.)"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+        </TableLayout>
+
+
+
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -45,11 +45,11 @@
 
         <Button
             android:id="@+id/moveButton"
-            android:layout_width="150dp"
+            android:layout_width="168dp"
             android:layout_height="140dp"
+            android:background="#FDFD96"
             android:text="시내 통학버스"
-            android:textSize="18sp"
-            android:background="#FDFD96"/>
+            android:textSize="18sp" />
 
         <Space
             android:layout_width="16dp"
@@ -57,11 +57,11 @@
 
         <Button
             android:id="@+id/moveButton2"
-            android:layout_width="150dp"
+            android:layout_width="166dp"
             android:layout_height="140dp"
+            android:background="#FDFD96"
             android:text="시외 통학버스"
-            android:textSize="18sp"
-            android:background="#FDFD96"/>
+            android:textSize="18sp" />
     </LinearLayout>
 
 

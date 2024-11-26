@@ -2,6 +2,7 @@ package com.example.campusFinder;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -10,6 +11,7 @@ public class IksanBus extends AppCompatActivity {
 
     private ImageButton btnBack;  // 뒤로가기 버튼 추가
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
