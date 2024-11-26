@@ -66,6 +66,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
 style Base.Theme.CampusFinder
+style CustomButton
 style Theme.CampusFinder
 xml backup_rules
 xml data_extraction_rules

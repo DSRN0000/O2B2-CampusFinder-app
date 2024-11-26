@@ -6,6 +6,12 @@
     <style name="Base.Theme.CampusFinder" parent="Theme.Material3.DayNight.NoActionBar">
         
         
+
+
+    </style>
+    <style name="CustomButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">#88b14b</item> 
+        <item name="android:textColor">#FFFFFF</item> 
     </style>
     <style name="Theme.CampusFinder" parent="Base.Theme.CampusFinder"/>
 </resources>
