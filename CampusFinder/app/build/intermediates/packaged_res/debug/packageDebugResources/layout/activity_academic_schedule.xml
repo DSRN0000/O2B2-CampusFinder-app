@@ -1,4 +1,6 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,57 +16,80 @@
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="뒤로 가기 버튼" />
 
+    <!-- 로고 이미지 -->
     <ImageView
         android:id="@+id/logoImage"
         android:layout_width="250dp"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         android:src="@drawable/logo"
         android:layout_marginTop="16dp"
         android:contentDescription="Campus Finder Logo"
         android:layout_gravity="center_horizontal" />
 
-    <!-- 상단 월 텍스트 -->
-    <TextView
-        android:id="@+id/currentMonth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="11월"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp" />
-
-    <!-- 이전/다음 달 버튼 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="8dp">
-
-        <Button
-            android:id="@+id/prevMonthButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="이전 달"
-            android:onClick="onPrevMonthClicked" />
-
-        <Button
-            android:id="@+id/nextMonthButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="다음 달"
-            android:onClick="onNextMonthClicked"
-            android:layout_marginStart="16dp" />
-    </LinearLayout>
-
-    <!-- 학사일정 테이블 -->
-    <TableLayout
-        android:id="@+id/academicScheduleTable"
+    <!-- 테두리를 포함하는 CardView -->
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:stretchColumns="1"
-        android:divider="@android:color/darker_gray"
-        android:showDividers="middle" />
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="4dp"
+        card_view:cardBackgroundColor="#FFFFFF"
+        card_view:strokeWidth="2dp"
+        card_view:strokeColor="#DDDDDD">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 이전/다음 달과 월 텍스트 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/prevMonthButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFCFA2"
+                    android:text="이전 달"
+                    android:textColor="@color/black"
+                    android:onClick="onPrevMonthClicked" />
+
+                <TextView
+                    android:id="@+id/currentMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/nextMonthButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFCFA2"
+                    android:text="다음 달"
+                    android:textColor="@color/black"
+                    android:onClick="onNextMonthClicked" />
+            </LinearLayout>
+
+            <!-- 학사일정 테이블 -->
+            <TableLayout
+                android:id="@+id/academicScheduleTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:stretchColumns="1"
+                android:divider="@android:color/darker_gray"
+                android:showDividers="middle" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>

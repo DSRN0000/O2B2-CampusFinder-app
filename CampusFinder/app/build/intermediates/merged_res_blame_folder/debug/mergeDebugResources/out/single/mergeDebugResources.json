@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\layout_activity_select_floor.xml.flat",
+        "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\layout\\activity_select_floor.xml"
+    },
+    {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\layout_activity_navigation_method.xml.flat",
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\layout\\activity_navigation_method.xml"
     },
@@ -20,10 +24,6 @@
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.campusFinder.app-debug-4:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "com.example.campusFinder.app-main-6:/mipmap-anydpi/ic_launcher_round.xml"
-    },
-    {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\ic_launcher_foreground.xml"
     },
@@ -32,12 +32,12 @@
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\mipmap-xxhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\layout_activity_building_selection.xml.flat",
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\layout\\activity_building_selection.xml"
+    },
+    {
+        "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\layout_activity_academic_schedule.xml.flat",
@@ -64,12 +64,12 @@
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\prime.jpg"
     },
     {
-        "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\logo.png"
+        "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\drawable_background_box1.xml.flat",
+        "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\background_box1.xml"
     },
     {
-        "merged": "com.example.campusFinder.app-debug-4:/drawable_background_box.xml.flat",
-        "source": "com.example.campusFinder.app-main-6:/drawable/background_box.xml"
+        "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\logo.png"
     },
     {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\mipmap-anydpi_ic_launcher.xml.flat",
@@ -108,16 +108,8 @@
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.campusFinder.app-debug-4:/layout_activity_select_floor.xml.flat",
-        "source": "com.example.campusFinder.app-main-6:/layout/activity_select_floor.xml"
-    },
-    {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\drawable_box_border.xml.flat",
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\box_border.xml"
-    },
-    {
-        "merged": "com.example.campusFinder.app-debug-4:/layout_activity_search.xml.flat",
-        "source": "com.example.campusFinder.app-main-6:/layout/activity_search.xml"
     },
     {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -138,6 +130,10 @@
     {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\drawable_se.jpg.flat",
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\se.jpg"
+    },
+    {
+        "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\drawable_background_box.xml.flat",
+        "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\background_box.xml"
     },
     {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -176,6 +172,10 @@
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\iksan_bus.jpg"
     },
     {
+        "merged": "com.example.campusFinder.app-debug-4:/layout_activity_academic_schedule.xml.flat",
+        "source": "com.example.campusFinder.app-main-6:/layout/activity_academic_schedule.xml"
+    },
+    {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\drawable_ic_back.png.flat",
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\ic_back.png"
     },
@@ -186,10 +186,6 @@
     {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\drawable_iksan_bus2.jpg.flat",
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\iksan_bus2.jpg"
-    },
-    {
-        "merged": "com.example.campusFinder.app-debug-4:/drawable_background_box1.xml.flat",
-        "source": "com.example.campusFinder.app-main-6:/drawable/background_box1.xml"
     },
     {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\drawable_findclass.png.flat",

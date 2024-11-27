@@ -7,13 +7,15 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import java.util.List;
 import java.util.Calendar;
+import java.util.List;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -45,28 +47,27 @@ public class AcademicScheduleActivity extends AppCompatActivity {
         loadAcademicSchedule();
     }
 
-    // 현재 달을 설정하는 메서드
     private void setCurrentMonth() {
-        SimpleDateFormat monthFormat = new SimpleDateFormat("MM월", Locale.getDefault());
+        // 현재 날짜를 "XXXX XX월" 형식으로 포맷
+        SimpleDateFormat monthFormat = new SimpleDateFormat("yyyy MM월", Locale.getDefault());
         String currentMonth = monthFormat.format(calendar.getTime());
+
+        // TextView에 설정
         currentMonthText.setText(currentMonth);
     }
 
-    // 이전 달 버튼 클릭 메서드
     public void onPrevMonthClicked(View view) {
-        calendar.add(Calendar.MONTH, -1);
-        setCurrentMonth();
-        loadAcademicSchedule();
+        calendar.add(Calendar.MONTH, -1); // 이전 달로 이동
+        setCurrentMonth(); // 텍스트 업데이트
+        loadAcademicSchedule(); // 새로운 일정 로드
     }
 
-    // 다음 달 버튼 클릭 메서드
     public void onNextMonthClicked(View view) {
-        calendar.add(Calendar.MONTH, 1);
-        setCurrentMonth();
-        loadAcademicSchedule();
+        calendar.add(Calendar.MONTH, 1); // 다음 달로 이동
+        setCurrentMonth(); // 텍스트 업데이트
+        loadAcademicSchedule(); // 새로운 일정 로드
     }
 
-    // 학사일정 데이터를 로드하여 테이블에 추가하는 메서드
     private void loadAcademicSchedule() {
         ApiService apiService = RetrofitInstance.getApiService();
         Call<List<AcademicSchedule>> call = apiService.getAcademicSchedule();
@@ -74,58 +75,48 @@ public class AcademicScheduleActivity extends AppCompatActivity {
         call.enqueue(new Callback<List<AcademicSchedule>>() {
             @Override
             public void onResponse(Call<List<AcademicSchedule>> call, Response<List<AcademicSchedule>> response) {
-                Log.d("AcademicSchedule", "Response: " + response.toString());
-
                 if (response.isSuccessful() && response.body() != null) {
                     List<AcademicSchedule> schedules = response.body();
-                    Log.d("AcademicSchedule", "Schedules list: " + schedules.toString());
-                    academicScheduleTable.removeAllViews(); // 이전 데이터 제거
+                    academicScheduleTable.removeAllViews(); // 기존 내용 제거
 
-                    // 테이블 헤더 추가
-                    TableRow headerRow = new TableRow(AcademicScheduleActivity.this);
-                    headerRow.addView(createTextView("기간", true));
-                    headerRow.addView(createTextView("학사일정", true));
-                    academicScheduleTable.addView(headerRow);
+                    boolean hasScheduleForCurrentMonth = false;
 
                     for (AcademicSchedule schedule : schedules) {
                         try {
                             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
 
-                            // startDate 확인 및 파싱
                             String startDateStr = schedule.getStartDate();
                             if (startDateStr == null || startDateStr.isEmpty()) {
-                                Log.e("AcademicSchedule", "Start date is null or empty");
                                 continue;
                             }
                             Date startDate = sdf.parse(startDateStr);
 
-                            String formattedStartDate = new SimpleDateFormat("MM월 dd일", Locale.getDefault()).format(startDate);
+                            String formattedStartDate = new SimpleDateFormat("MM.dd", Locale.getDefault()).format(startDate);
                             String displayDate;
 
-                            // endDate 확인 및 파싱
                             String endDateStr = schedule.getEndDate();
                             if (endDateStr != null && !endDateStr.isEmpty()) {
                                 Date endDate = sdf.parse(endDateStr);
-                                String formattedEndDate = new SimpleDateFormat("MM월 dd일", Locale.getDefault()).format(endDate);
+                                String formattedEndDate = new SimpleDateFormat("MM.dd", Locale.getDefault()).format(endDate);
                                 displayDate = formattedStartDate + " - " + formattedEndDate;
                             } else {
                                 displayDate = formattedStartDate;
                             }
 
-                            // 현재 달과 동일한 데이터만 표시
                             Calendar scheduleCalendar = Calendar.getInstance();
                             scheduleCalendar.setTime(startDate);
                             if (scheduleCalendar.get(Calendar.MONTH) == calendar.get(Calendar.MONTH)) {
-                                TableRow row = new TableRow(AcademicScheduleActivity.this);
-
-                                // 기간과 학사일정 셀 추가
-                                row.addView(createTextView(displayDate, false));
-                                row.addView(createTextView(schedule.getSchedule(), false));
-                                academicScheduleTable.addView(row);
+                                hasScheduleForCurrentMonth = true;
+                                addScheduleRow(displayDate, schedule.getSchedule());
                             }
                         } catch (ParseException e) {
-                            Log.e("AcademicSchedule", "Date parsing error: " + e.getMessage());
+                            e.printStackTrace();
                         }
+                    }
+
+                    // 현재 월에 대한 일정이 없는 경우
+                    if (!hasScheduleForCurrentMonth) {
+                        addNoScheduleRow();
                     }
                 } else {
                     Toast.makeText(AcademicScheduleActivity.this, "학사일정을 불러오는 데 실패했습니다.", Toast.LENGTH_SHORT).show();
@@ -135,33 +126,72 @@ public class AcademicScheduleActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<AcademicSchedule>> call, Throwable t) {
                 Toast.makeText(AcademicScheduleActivity.this, "네트워크 오류: " + t.getMessage(), Toast.LENGTH_SHORT).show();
-                t.printStackTrace();
             }
         });
     }
 
-    // 동적으로 텍스트뷰를 생성하는 메서드 (헤더와 데이터 셀 구분)
-    private TextView createTextView(String text, boolean isHeader) {
-        TextView textView = new TextView(this);
-        textView.setText(text != null ? text : ""); // null 방지
-        textView.setPadding(16, 16, 16, 16);
-        textView.setGravity(Gravity.CENTER);
+    // 일정이 없는 경우 표시할 행 추가
+    private void addNoScheduleRow() {
+        TableRow row = new TableRow(this);
+        row.setPadding(0, 20, 0, 20);
 
-        if (isHeader) {
-            textView.setTextSize(16);
-            textView.setTypeface(null, Typeface.BOLD);
-            textView.setBackgroundColor(Color.LTGRAY);
-        } else {
-            textView.setTextSize(14);
-            textView.setBackgroundColor(Color.WHITE);
-        }
+        TextView noScheduleTextView = new TextView(this);
+        noScheduleTextView.setText("일정이 없습니다");
+        noScheduleTextView.setTextColor(Color.parseColor("#555555"));
+        noScheduleTextView.setTextSize(16);
+        noScheduleTextView.setGravity(Gravity.CENTER);
+        noScheduleTextView.setTypeface(null, Typeface.ITALIC); // 기울임체로 스타일링
+        noScheduleTextView.setPadding(16, 16, 16, 16);
 
-        textView.setLayoutParams(new TableRow.LayoutParams(
+        // 행의 크기 조정
+        TableRow.LayoutParams params = new TableRow.LayoutParams(
                 TableRow.LayoutParams.MATCH_PARENT,
-                TableRow.LayoutParams.WRAP_CONTENT,
-                1f
-        ));
+                TableRow.LayoutParams.WRAP_CONTENT
+        );
+        params.span = 2; // 테이블의 두 열을 모두 차지하도록 설정
+        noScheduleTextView.setLayoutParams(params);
 
-        return textView;
+        row.addView(noScheduleTextView);
+        academicScheduleTable.addView(row);
+    }
+
+    private void addScheduleRow(String date, String content) {
+        // 테이블 행 생성
+        TableRow row = new TableRow(this);
+        row.setPadding(0, 10, 0, 10);
+
+        // 날짜
+        TextView dateTextView = new TextView(this);
+        dateTextView.setText(date);
+        dateTextView.setTextColor(Color.parseColor("#333333"));
+        dateTextView.setTypeface(null, Typeface.BOLD);
+        dateTextView.setTextSize(16);
+        dateTextView.setGravity(Gravity.START);
+        dateTextView.setPadding(32, 16, 16, 16);
+        row.addView(dateTextView);
+
+        // 일정 내용
+        TextView contentTextView = new TextView(this);
+        contentTextView.setText(content);
+        contentTextView.setTextColor(Color.parseColor("#555555"));
+        contentTextView.setTextSize(14);
+        contentTextView.setGravity(Gravity.START);
+        contentTextView.setPadding(32, 16, 16, 16);
+        row.addView(contentTextView);
+
+        // Row 스타일
+        row.setBackgroundColor(Color.parseColor("#F9F9F9"));
+
+        // Row 추가
+        academicScheduleTable.addView(row);
+
+        // 구분선 추가
+        View divider = new View(this);
+        divider.setLayoutParams(new TableRow.LayoutParams(
+                TableRow.LayoutParams.MATCH_PARENT,
+                2
+        ));
+        divider.setBackgroundColor(Color.parseColor("#DDDDDD"));
+        academicScheduleTable.addView(divider);
     }
 }
