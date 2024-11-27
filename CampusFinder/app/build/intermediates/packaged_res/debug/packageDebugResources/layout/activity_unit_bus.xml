@@ -38,30 +38,76 @@
         android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:paddingHorizontal="20dp">
 
-        <Button
-            android:id="@+id/moveButton"
-            android:layout_width="168dp"
-            android:layout_height="140dp"
-            android:background="#FDFD96"
-            android:text="시내 통학버스"
-            android:textSize="18sp" />
+        <!-- 핀포인트 보기 버튼 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp">
 
-        <Space
-            android:layout_width="16dp"
-            android:layout_height="wrap_content" />
+            <FrameLayout
+                android:id="@+id/btnInbus"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#FFFFA7"
+                android:padding="20dp">
 
-        <Button
-            android:id="@+id/moveButton2"
-            android:layout_width="166dp"
-            android:layout_height="140dp"
-            android:background="#FDFD96"
-            android:text="시외 통학버스"
-            android:textSize="18sp" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/inbus1" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="시내 통학버스"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- 경로 검색하기 버튼 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <FrameLayout
+                android:id="@+id/btnOutbus"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#FFFFA7"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/outbus1" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="시외 통학버스"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
     </LinearLayout>
 
 

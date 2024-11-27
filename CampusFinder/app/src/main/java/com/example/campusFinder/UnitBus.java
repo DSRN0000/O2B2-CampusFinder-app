@@ -9,8 +9,8 @@ import android.widget.ImageButton;
 
 public class UnitBus extends AppCompatActivity {
 
-    private Button moveButton;
-    private Button moveButton2;
+    private View moveButton;
+    private View moveButton2;
     private ImageButton btnBack;  // 뒤로가기 버튼 추가
 
     @Override
@@ -19,7 +19,7 @@ public class UnitBus extends AppCompatActivity {
         setContentView(R.layout.activity_unit_bus); // UnitBus의 레이아웃 설정
 
         // 시내버스 버튼 설정
-        moveButton = findViewById(R.id.moveButton);
+        moveButton = findViewById(R.id.btnInbus);
         moveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +29,7 @@ public class UnitBus extends AppCompatActivity {
         });
 
         // 시외버스 버튼 설정
-        moveButton2 = findViewById(R.id.moveButton2);
+        moveButton2 = findViewById(R.id.btnOutbus);
         moveButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

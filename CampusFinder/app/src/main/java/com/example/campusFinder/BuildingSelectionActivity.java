@@ -44,24 +44,40 @@ public class BuildingSelectionActivity extends AppCompatActivity {
         View.OnClickListener buildingClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BuildingSelectionActivity.this, SelectFloorActivity.class);
-                String buildingName = "";
+                Intent intent = null;
 
+                // 클릭한 버튼에 따라 이동할 액티비티를 다르게 설정
                 if (v.getId() == R.id.btnGonghak) {
-                    buildingName = "공학관";
+                    intent = new Intent(BuildingSelectionActivity.this, GonghakRoomInfoActivity.class);
                 } else if (v.getId() == R.id.btnPrime) {
-                    buildingName = "프라임관";
+                    intent = new Intent(BuildingSelectionActivity.this, PrimeRoomInfoActivity.class);
                 } else if (v.getId() == R.id.btnSe) {
-                    buildingName = "새천년관";
+                    intent = new Intent(BuildingSelectionActivity.this, SaecheonRoomInfoActivity.class);
                 } else if (v.getId() == R.id.btnInmoon) {
-                    buildingName = "인문관";
+                    intent = new Intent(BuildingSelectionActivity.this, InmoonRoomInfoActivity.class);
                 }
 
-                intent.putExtra("building_name", buildingName);
-                startActivity(intent);
+                if (intent != null) {
+                    // 선택한 건물 이름 전달
+                    String buildingName = "";
+
+                    if (v.getId() == R.id.btnGonghak) {
+                        buildingName = "공학관";
+                    } else if (v.getId() == R.id.btnPrime) {
+                        buildingName = "프라임관";
+                    } else if (v.getId() == R.id.btnSe) {
+                        buildingName = "새천년관";
+                    } else if (v.getId() == R.id.btnInmoon) {
+                        buildingName = "인문관";
+                    }
+
+                    intent.putExtra("building_name", buildingName);
+                    startActivity(intent);
+                }
             }
         };
 
+        // 각 버튼에 리스너 등록
         btnGonghak.setOnClickListener(buildingClickListener);
         btnPrime.setOnClickListener(buildingClickListener);
         btnSe.setOnClickListener(buildingClickListener);

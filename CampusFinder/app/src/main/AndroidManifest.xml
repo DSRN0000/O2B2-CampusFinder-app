@@ -31,7 +31,10 @@
         <activity android:name=".SearchActivity" android:exported="true" />
 
         <!-- RoomInfoActivity 등록 -->
-        <activity android:name=".RoomInfoActivity" android:exported="true" />
+        <activity android:name=".PrimeRoomInfoActivity" android:exported="true" />
+        <activity android:name=".InmoonRoomInfoActivity" android:exported="true" />
+        <activity android:name=".GonghakRoomInfoActivity" android:exported="true" />
+        <activity android:name=".SaecheonRoomInfoActivity" android:exported="true" />
 
         <!-- AcademicScheduleActivity 등록 -->
         <activity android:name=".AcademicScheduleActivity" android:exported="true" />
@@ -39,7 +42,11 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".BuildingSelectionActivity" />
         <activity android:name=".NavigationMethodActivity" />
-        <activity android:name=".SelectFloorActivity"/>
+
+        <activity android:name=".PrimeSelectFloorActivity"/>
+        <activity android:name=".InmoonSelectFloorActivity"/>
+        <activity android:name=".GonghakSelectFloorActivity"/>
+        <activity android:name=".SaecheonSelectFloorActivity"/>
 
         <activity android:name=".UnitBus" />
         <activity android:name=".IksanBus" />

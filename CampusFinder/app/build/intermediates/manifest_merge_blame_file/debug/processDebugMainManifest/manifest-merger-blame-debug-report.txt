@@ -24,7 +24,7 @@
 17-->[androidx.core:core:1.9.0] C:\Users\leeka\.gradle\caches\transforms-4\e1d79aea9cdf035ffc3be71384b7e9dc\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:7:5-48:19
+19-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:7:5-55:19
 20        android:allowBackup="true"
 20-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:8:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -78,106 +78,133 @@
 49
 50        <!-- RoomInfoActivity 등록 -->
 51        <activity
-51-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:34:9-78
-52            android:name="com.example.campusFinder.RoomInfoActivity"
-52-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:34:19-51
+51-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:34:9-83
+52            android:name="com.example.campusFinder.PrimeRoomInfoActivity"
+52-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:34:19-56
 53            android:exported="true" />
-53-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:34:52-75
-54
-55        <!-- AcademicScheduleActivity 등록 -->
-56        <activity
-56-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:37:9-86
-57            android:name="com.example.campusFinder.AcademicScheduleActivity"
-57-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:37:19-59
-58            android:exported="true" />
-58-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:37:60-83
-59        <activity android:name="com.example.campusFinder.MainActivity" />
-59-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:39:9-50
-59-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:39:19-47
-60        <activity android:name="com.example.campusFinder.BuildingSelectionActivity" />
-60-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:40:9-63
-60-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:40:19-60
-61        <activity android:name="com.example.campusFinder.NavigationMethodActivity" />
-61-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:41:9-62
-61-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:41:19-59
-62        <activity android:name="com.example.campusFinder.SelectFloorActivity" />
-62-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:42:9-56
-62-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:42:19-54
-63        <activity android:name="com.example.campusFinder.UnitBus" />
-63-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:44:9-45
-63-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:44:19-42
-64        <activity android:name="com.example.campusFinder.IksanBus" />
-64-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:45:9-46
-64-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:45:19-43
-65        <activity android:name="com.example.campusFinder.OutBus" />
-65-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:46:9-44
-65-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:46:19-41
-66
-67        <provider
-67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-68            android:name="androidx.startup.InitializationProvider"
-68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-69            android:authorities="com.example.campusFinder.androidx-startup"
-69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-70            android:exported="false" >
-70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-71            <meta-data
-71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-72                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-73                android:value="androidx.startup" />
-73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-74            <meta-data
-74-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\leeka\.gradle\caches\transforms-4\8a3da937aa1d48c608eb09036d91fb3d\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-75                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-75-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\leeka\.gradle\caches\transforms-4\8a3da937aa1d48c608eb09036d91fb3d\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-76                android:value="androidx.startup" />
-76-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\leeka\.gradle\caches\transforms-4\8a3da937aa1d48c608eb09036d91fb3d\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-77            <meta-data
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-78                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-79                android:value="androidx.startup" />
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-80        </provider>
-81
-82        <receiver
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-83            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-84            android:directBootAware="false"
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-85            android:enabled="true"
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-86            android:exported="true"
-86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-87            android:permission="android.permission.DUMP" >
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-88            <intent-filter>
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-89                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-90            </intent-filter>
-91            <intent-filter>
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-92                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-93            </intent-filter>
-94            <intent-filter>
-94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-95                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-96            </intent-filter>
-97            <intent-filter>
-97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-98                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-99            </intent-filter>
-100        </receiver>
-101    </application>
-102
-103</manifest>
+53-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:34:57-80
+54        <activity
+54-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:35:9-84
+55            android:name="com.example.campusFinder.InmoonRoomInfoActivity"
+55-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:35:19-57
+56            android:exported="true" />
+56-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:35:58-81
+57        <activity
+57-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:36:9-85
+58            android:name="com.example.campusFinder.GonghakRoomInfoActivity"
+58-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:36:19-58
+59            android:exported="true" />
+59-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:36:59-82
+60        <activity
+60-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:37:9-86
+61            android:name="com.example.campusFinder.SaecheonRoomInfoActivity"
+61-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:37:19-59
+62            android:exported="true" />
+62-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:37:60-83
+63
+64        <!-- AcademicScheduleActivity 등록 -->
+65        <activity
+65-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:40:9-86
+66            android:name="com.example.campusFinder.AcademicScheduleActivity"
+66-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:40:19-59
+67            android:exported="true" />
+67-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:40:60-83
+68        <activity android:name="com.example.campusFinder.MainActivity" />
+68-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:42:9-50
+68-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:42:19-47
+69        <activity android:name="com.example.campusFinder.BuildingSelectionActivity" />
+69-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:43:9-63
+69-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:43:19-60
+70        <activity android:name="com.example.campusFinder.NavigationMethodActivity" />
+70-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:44:9-62
+70-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:44:19-59
+71        <activity android:name="com.example.campusFinder.PrimeSelectFloorActivity" />
+71-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:46:9-61
+71-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:46:19-59
+72        <activity android:name="com.example.campusFinder.InmoonSelectFloorActivity" />
+72-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:47:9-62
+72-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:47:19-60
+73        <activity android:name="com.example.campusFinder.GonghakSelectFloorActivity" />
+73-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:48:9-63
+73-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:48:19-61
+74        <activity android:name="com.example.campusFinder.SaecheonSelectFloorActivity" />
+74-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:49:9-64
+74-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:49:19-62
+75        <activity android:name="com.example.campusFinder.UnitBus" />
+75-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:51:9-45
+75-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:51:19-42
+76        <activity android:name="com.example.campusFinder.IksanBus" />
+76-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:52:9-46
+76-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:52:19-43
+77        <activity android:name="com.example.campusFinder.OutBus" />
+77-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:53:9-44
+77-->C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:53:19-41
+78
+79        <provider
+79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+80            android:name="androidx.startup.InitializationProvider"
+80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+81            android:authorities="com.example.campusFinder.androidx-startup"
+81-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+82            android:exported="false" >
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+83            <meta-data
+83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+84                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+85                android:value="androidx.startup" />
+85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+86            <meta-data
+86-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\leeka\.gradle\caches\transforms-4\8a3da937aa1d48c608eb09036d91fb3d\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+87                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+87-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\leeka\.gradle\caches\transforms-4\8a3da937aa1d48c608eb09036d91fb3d\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+88                android:value="androidx.startup" />
+88-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\leeka\.gradle\caches\transforms-4\8a3da937aa1d48c608eb09036d91fb3d\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+89            <meta-data
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+91                android:value="androidx.startup" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+92        </provider>
+93
+94        <receiver
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+95            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+96            android:directBootAware="false"
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+97            android:enabled="true"
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+98            android:exported="true"
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+99            android:permission="android.permission.DUMP" >
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+101                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+102            </intent-filter>
+103            <intent-filter>
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+104                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+105            </intent-filter>
+106            <intent-filter>
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+107                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+108            </intent-filter>
+109            <intent-filter>
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+110                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+111            </intent-filter>
+112        </receiver>
+113    </application>
+114
+115</manifest>
