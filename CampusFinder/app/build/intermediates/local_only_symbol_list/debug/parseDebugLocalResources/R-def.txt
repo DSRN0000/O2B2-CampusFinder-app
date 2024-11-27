@@ -16,6 +16,7 @@ drawable iksan_bus2
 drawable iksan_bus3
 drawable inmoon
 drawable logo
+drawable o2b2
 drawable prime
 drawable rect_button_background
 drawable se
