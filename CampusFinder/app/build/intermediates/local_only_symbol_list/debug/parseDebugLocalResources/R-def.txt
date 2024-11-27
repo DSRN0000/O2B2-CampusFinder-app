@@ -2,6 +2,8 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+drawable background_box
+drawable background_box1
 drawable border_frame
 drawable box_border
 drawable bus
@@ -30,6 +32,11 @@ id btnCalendar
 id btnClassroom
 id btnComingSoon1
 id btnComingSoon2
+id btnFloor1
+id btnFloor2
+id btnFloor3
+id btnFloor4
+id btnFloor5
 id btnGonghak
 id btnInmoon
 id btnPinpoint
@@ -67,6 +74,7 @@ layout activity_navigation_method
 layout activity_out_bus
 layout activity_room_info
 layout activity_search
+layout activity_select_floor
 layout activity_splash
 layout activity_unit_bus
 layout inmoon5

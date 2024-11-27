@@ -43,7 +43,7 @@ public class NavigationMethodActivity extends AppCompatActivity {
         btnPinpoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NavigationMethodActivity.this, RoomInfoActivity.class);
+                Intent intent = new Intent(NavigationMethodActivity.this, BuildingSelectionActivity.class);
                 startActivity(intent);
             }
         });

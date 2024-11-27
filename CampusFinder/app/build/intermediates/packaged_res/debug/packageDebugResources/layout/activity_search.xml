@@ -36,14 +36,14 @@
         android:layout_marginTop="16dp" />
 
     <!-- 검색 버튼 -->
-    <Button
+    <android.widget.Button
         android:id="@+id/searchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/background_box1"
         android:text="검색"
         android:layout_marginTop="8dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/rect_button_background" />
+        android:layout_gravity="center_horizontal"/>
 
     <!-- 검색 결과를 표시할 TableLayout -->
     <TableLayout

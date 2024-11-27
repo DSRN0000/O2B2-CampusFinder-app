@@ -2939,6 +2939,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_box
+drawable background_box1
 drawable border_frame
 drawable box_border
 drawable btn_checkbox_checked_mtrl
@@ -3165,6 +3167,11 @@ id btnCalendar
 id btnClassroom
 id btnComingSoon1
 id btnComingSoon2
+id btnFloor1
+id btnFloor2
+id btnFloor3
+id btnFloor4
+id btnFloor5
 id btnGonghak
 id btnInmoon
 id btnPinpoint
@@ -3711,6 +3718,7 @@ layout activity_navigation_method
 layout activity_out_bus
 layout activity_room_info
 layout activity_search
+layout activity_select_floor
 layout activity_splash
 layout activity_unit_bus
 layout custom_dialog

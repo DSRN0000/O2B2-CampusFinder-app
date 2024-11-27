@@ -59,6 +59,7 @@
         <activity android:name="com.example.campusFinder.MainActivity" />
         <activity android:name="com.example.campusFinder.BuildingSelectionActivity" />
         <activity android:name="com.example.campusFinder.NavigationMethodActivity" />
+        <activity android:name="com.example.campusFinder.SelectFloorActivity" />
         <activity android:name="com.example.campusFinder.UnitBus" />
         <activity android:name="com.example.campusFinder.IksanBus" />
         <activity android:name="com.example.campusFinder.OutBus" />

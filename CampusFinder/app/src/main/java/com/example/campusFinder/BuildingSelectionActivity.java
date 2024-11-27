@@ -44,7 +44,7 @@ public class BuildingSelectionActivity extends AppCompatActivity {
         View.OnClickListener buildingClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BuildingSelectionActivity.this, NavigationMethodActivity.class);
+                Intent intent = new Intent(BuildingSelectionActivity.this, SelectFloorActivity.class);
                 String buildingName = "";
 
                 if (v.getId() == R.id.btnGonghak) {

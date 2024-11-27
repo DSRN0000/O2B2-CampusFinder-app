@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btnClassroom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, BuildingSelectionActivity.class);
+                Intent intent = new Intent(MainActivity.this, NavigationMethodActivity.class);
                 startActivity(intent);
             }
         });

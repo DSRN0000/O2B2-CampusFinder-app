@@ -39,6 +39,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".BuildingSelectionActivity" />
         <activity android:name=".NavigationMethodActivity" />
+        <activity android:name=".SelectFloorActivity"/>
 
         <activity android:name=".UnitBus" />
         <activity android:name=".IksanBus" />
