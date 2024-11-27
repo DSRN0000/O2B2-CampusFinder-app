@@ -1,7 +1,7 @@
-#Wed Nov 27 01:25:45 KST 2024
-base.0=C\:\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+#Wed Nov 27 18:59:26 KST 2024
+base.0=C\:\\LeeKangHyeon\\myStudy\\WKU\\FullstackAcademy_2\\AndroidStudioProjects\\O2B2\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\LeeKangHyeon\\myStudy\\WKU\\FullstackAcademy_2\\AndroidStudioProjects\\O2B2\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\LeeKangHyeon\\myStudy\\WKU\\FullstackAcademy_2\\AndroidStudioProjects\\O2B2\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=7/classes.dex

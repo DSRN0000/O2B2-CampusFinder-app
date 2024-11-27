@@ -4,7 +4,7 @@
             "outputFile": "com.example.campusFinder.app-mergeDebugResources-2:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\현수민\\.gradle\\caches\\transforms-4\\c800e4344c3e9e5adb0831f3ac3029d7\\transformed\\material-1.10.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\leeka\\.gradle\\caches\\transforms-4\\c800e4344c3e9e5adb0831f3ac3029d7\\transformed\\material-1.10.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
