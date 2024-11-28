@@ -19,6 +19,11 @@ drawable iksan_bus2
 drawable iksan_bus3
 drawable inbus1
 drawable inmoon
+drawable inmoon_floor1
+drawable inmoon_floor2
+drawable inmoon_floor3
+drawable inmoon_floor4
+drawable inmoon_floor5
 drawable inmoon_img
 drawable logo
 drawable o2b2
