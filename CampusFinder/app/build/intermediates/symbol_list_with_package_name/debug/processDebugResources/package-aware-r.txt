@@ -3325,6 +3325,11 @@ id immediateStop
 id included
 id indeterminate
 id info
+id inmoon_floor1
+id inmoon_floor2
+id inmoon_floor3
+id inmoon_floor4
+id inmoon_floor5
 id invisible
 id inward
 id italic

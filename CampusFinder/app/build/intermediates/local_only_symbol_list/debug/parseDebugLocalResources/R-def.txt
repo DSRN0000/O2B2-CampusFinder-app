@@ -66,6 +66,11 @@ id floor3Button
 id floor4Button
 id floor5Button
 id imageView
+id inmoon_floor1
+id inmoon_floor2
+id inmoon_floor3
+id inmoon_floor4
+id inmoon_floor5
 id logoImage
 id mapFrame
 id nextMonthButton

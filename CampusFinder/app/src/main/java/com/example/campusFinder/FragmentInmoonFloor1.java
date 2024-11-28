@@ -13,23 +13,19 @@ import androidx.fragment.app.Fragment;
 
 public class FragmentInmoonFloor1 extends Fragment {
 
-    private ImageView primeFloorImageView;
+    private ImageView inmoonFloorImageView;
     private ScaleGestureDetector scaleGestureDetector;
     private GestureDetector gestureDetector;
 
     private float scaleFactor = 1.0f;
     private float dx = 0, dy = 0;
 
-    public FragmentInmoonFloor1() {
-        // Required empty public constructor
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_inmoon_floor_1, container, false);
 
-        primeFloorImageView = view.findViewById(R.id.prime_floor1);
+        inmoonFloorImageView = view.findViewById(R.id.inmoon_floor1);
 
         // ScaleGestureDetector 초기화
         scaleGestureDetector = new ScaleGestureDetector(getContext(), new ScaleListener());
@@ -38,7 +34,7 @@ public class FragmentInmoonFloor1 extends Fragment {
         gestureDetector = new GestureDetector(getContext(), new GestureListener());
 
         // 터치 이벤트를 scaleGestureDetector와 gestureDetector에 전달
-        primeFloorImageView.setOnTouchListener((v, event) -> {
+        inmoonFloorImageView.setOnTouchListener((v, event) -> {
             scaleGestureDetector.onTouchEvent(event);
             gestureDetector.onTouchEvent(event);
             return true;
@@ -54,8 +50,8 @@ public class FragmentInmoonFloor1 extends Fragment {
             scaleFactor *= detector.getScaleFactor();
             scaleFactor = Math.max(0.1f, Math.min(scaleFactor, 5.0f)); // 최소 0.1배, 최대 5배
 
-            primeFloorImageView.setScaleX(scaleFactor);
-            primeFloorImageView.setScaleY(scaleFactor);
+            inmoonFloorImageView.setScaleX(scaleFactor);
+            inmoonFloorImageView.setScaleY(scaleFactor);
             return true;
         }
     }
@@ -68,8 +64,8 @@ public class FragmentInmoonFloor1 extends Fragment {
             dy -= distanceY;
 
             // 이동된 거리만큼 이미지 이동
-            primeFloorImageView.setTranslationX(dx);
-            primeFloorImageView.setTranslationY(dy);
+            inmoonFloorImageView.setTranslationX(dx);
+            inmoonFloorImageView.setTranslationY(dy);
             return true;
         }
     }
