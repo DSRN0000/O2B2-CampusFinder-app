@@ -2980,6 +2980,11 @@ int drawable iksan_bus2 0x7f0700a0
 int drawable iksan_bus3 0x7f0700a1
 int drawable inbus1 0x7f0700a2
 int drawable inmoon 0x7f0700a3
+int drawable inmoon_floor1 0x7f0700fe
+int drawable inmoon_floor2 0x7f0700ff
+int drawable inmoon_floor3 0x7f070100
+int drawable inmoon_floor4 0x7f070101
+int drawable inmoon_floor5 0x7f070102
 int drawable inmoon_img 0x7f0700a4
 int drawable logo 0x7f0700a5
 int drawable m3_appbar_background 0x7f0700a6
@@ -3057,6 +3062,7 @@ int drawable notify_panel_notification_icon_bg 0x7f0700ed
 int drawable o2b2 0x7f0700ee
 int drawable outbus1 0x7f0700ef
 int drawable prime 0x7f0700f0
+int drawable prime2 0x7f070103
 int drawable prime_floor1 0x7f0700f1
 int drawable prime_floor2 0x7f0700f2
 int drawable prime_floor3 0x7f0700f3
