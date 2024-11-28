@@ -3302,6 +3302,11 @@ int id fullscreen_header 0x7f0800df
 int id ghost_view 0x7f0800e0
 int id ghost_view_holder 0x7f0800e1
 int id gone 0x7f0800e2
+int id gongHak_floor1 0x7f080221
+int id gongHak_floor2 0x7f080222
+int id gongHak_floor3 0x7f080223
+int id gongHak_floor4 0x7f080224
+int id gongHak_floor5 0x7f080225
 int id graph 0x7f0800e3
 int id graph_wrap 0x7f0800e4
 int id group_divider 0x7f0800e5
@@ -3491,6 +3496,11 @@ int id scrollIndicatorDown 0x7f080197
 int id scrollIndicatorUp 0x7f080198
 int id scrollView 0x7f080199
 int id scrollable 0x7f08019a
+int id seaCheon_floor1 0x7f080226
+int id seaCheon_floor2 0x7f080227
+int id seaCheon_floor3 0x7f080228
+int id seaCheon_floor4 0x7f080229
+int id seaCheon_floor5 0x7f08022a
 int id searchButton 0x7f08019b
 int id searchField 0x7f08019c
 int id search_badge 0x7f08019d

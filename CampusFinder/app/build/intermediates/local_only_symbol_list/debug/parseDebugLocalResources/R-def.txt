@@ -65,6 +65,11 @@ id floor2Button
 id floor3Button
 id floor4Button
 id floor5Button
+id gongHak_floor1
+id gongHak_floor2
+id gongHak_floor3
+id gongHak_floor4
+id gongHak_floor5
 id imageView
 id inmoon_floor1
 id inmoon_floor2
@@ -81,6 +86,11 @@ id prime_floor3
 id prime_floor4
 id prime_floor5
 id roomInfoTable
+id seaCheon_floor1
+id seaCheon_floor2
+id seaCheon_floor3
+id seaCheon_floor4
+id seaCheon_floor5
 id searchButton
 id searchField
 id text1

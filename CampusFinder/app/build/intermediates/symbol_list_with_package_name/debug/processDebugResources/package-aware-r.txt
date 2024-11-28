@@ -3303,6 +3303,11 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gone
+id gongHak_floor1
+id gongHak_floor2
+id gongHak_floor3
+id gongHak_floor4
+id gongHak_floor5
 id graph
 id graph_wrap
 id group_divider
@@ -3492,6 +3497,11 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id seaCheon_floor1
+id seaCheon_floor2
+id seaCheon_floor3
+id seaCheon_floor4
+id seaCheon_floor5
 id searchButton
 id searchField
 id search_badge
