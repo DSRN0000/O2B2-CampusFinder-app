@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -44,6 +45,12 @@ public class SearchActivity extends AppCompatActivity {
     public void onSearchClicked() {
         String query = searchField.getText().toString().trim();
 
+        // 키보드 숨기기
+        InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+        if (imm != null) {
+            imm.hideSoftInputFromWindow(searchField.getWindowToken(), 0);
+        }
+
         // 검색어가 비어 있는지 확인
         if (query.isEmpty()) {
             Toast.makeText(this, "검색어를 입력하세요.", Toast.LENGTH_SHORT).show();
@@ -83,8 +90,8 @@ public class SearchActivity extends AppCompatActivity {
                         mapButton.setOnClickListener(view -> {
                             Intent intent = new Intent(SearchActivity.this, RoomDetailActivity.class);
                             intent.putExtra("imagePath", room.getImage_path());
-                            intent.putExtra("buildingName",room.getBuilding_name());
-                            intent.putExtra("roomFloor",room.getRoom_floor());
+                            intent.putExtra("buildingName", room.getBuilding_name());
+                            intent.putExtra("roomFloor", room.getRoom_floor());
                             intent.putExtra("roomName", room.getRoom_name());
                             startActivity(intent);
                         });
