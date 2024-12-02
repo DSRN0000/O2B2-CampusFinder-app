@@ -2959,6 +2959,11 @@ int drawable design_password_eye 0x7f07008b
 int drawable design_snackbar_background 0x7f07008c
 int drawable findclass 0x7f07008d
 int drawable gonghak 0x7f07008e
+int drawable gonghak_floor1 0x7f070103
+int drawable gonghak_floor2 0x7f070104
+int drawable gonghak_floor3 0x7f070105
+int drawable gonghak_floor4 0x7f070106
+int drawable gonghak_floor5 0x7f070107
 int drawable gonghak_img 0x7f07008f
 int drawable ic_arrow_back_black_24 0x7f070090
 int drawable ic_back 0x7f070091

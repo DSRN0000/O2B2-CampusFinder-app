@@ -2960,6 +2960,11 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable findclass
 drawable gonghak
+drawable gonghak_floor1
+drawable gonghak_floor2
+drawable gonghak_floor3
+drawable gonghak_floor4
+drawable gonghak_floor5
 drawable gonghak_img
 drawable ic_arrow_back_black_24
 drawable ic_back
