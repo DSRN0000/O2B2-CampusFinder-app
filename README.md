@@ -52,5 +52,10 @@
 
 ### **[2024-12-02]**  
 - 검색 기능 스크롤 및 지도보기 버튼 추가
+- RoomDetailActivity.java 추가
+- activity_room_detail.xml 추가 + 로고 , 뒤로가기 버튼 추가
+- 세부지도 확대, 축소, 상,하,좌,우 이동 기능 구현
+- SearchActivity.java 입력 버튼 클릭 시 키보드 내리는 기능 구현
+- 공학관 평면도 추가
 
 ---  
