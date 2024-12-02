@@ -72,6 +72,9 @@
         <activity android:name="com.example.campusFinder.InmoonSelectFloorActivity" />
         <activity android:name="com.example.campusFinder.GonghakSelectFloorActivity" />
         <activity android:name="com.example.campusFinder.SaecheonSelectFloorActivity" />
+        <activity
+            android:name="com.example.campusFinder.RoomDetailActivity"
+            android:exported="true" />
         <activity android:name="com.example.campusFinder.UnitBus" />
         <activity android:name="com.example.campusFinder.IksanBus" />
         <activity android:name="com.example.campusFinder.OutBus" />

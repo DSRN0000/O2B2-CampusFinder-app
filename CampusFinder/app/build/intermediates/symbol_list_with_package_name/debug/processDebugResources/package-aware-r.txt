@@ -3302,6 +3302,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id gongHak_floor1
 id gongHak_floor2
@@ -3484,7 +3485,9 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id roomImageView
 id roomInfoTable
+id roomNameTextView
 id rounded
 id row_index_key
 id save_non_transition_alpha
@@ -3751,6 +3754,7 @@ layout activity_iksan_bus
 layout activity_main
 layout activity_navigation_method
 layout activity_out_bus
+layout activity_room_detail
 layout activity_room_info_gonghak
 layout activity_room_info_inmoon
 layout activity_room_info_prime

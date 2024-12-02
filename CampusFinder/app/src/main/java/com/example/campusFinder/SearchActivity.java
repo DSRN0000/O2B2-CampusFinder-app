@@ -1,5 +1,6 @@
 package com.example.campusFinder;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -49,8 +50,6 @@ public class SearchActivity extends AppCompatActivity {
             return;
         }
 
-        //Log.d("SearchActivity", "API 호출 시작 - 검색어: " + query);
-
         // Retrofit API 호출
         ApiService apiService = RetrofitInstance.getApiService();
         Call<List<RoomInfo>> call = apiService.getRoomInfo(query);
@@ -78,24 +77,21 @@ public class SearchActivity extends AppCompatActivity {
                         // 층 열
                         TextView floorText = createCell(room.getRoom_floor());
 
-                        // '강의실 보기' 버튼 추가
-                        Button viewRoomButton = new Button(SearchActivity.this);
-                        viewRoomButton.setText("강의실 보기");
-                        viewRoomButton.setOnClickListener(view -> {
-                            // 버튼 클릭 시 호출되는 코드 (강의실 세부 정보 표시)
-                            Toast.makeText(SearchActivity.this, room.getRoom_name() + " 상세보기", Toast.LENGTH_SHORT).show();
-
-                            // 예시: 강의실 상세 화면으로 이동
-                            // Intent intent = new Intent(SearchActivity.this, RoomDetailActivity.class);
-                            // intent.putExtra("roomId", room.getRoom_id()); // ID 전달
-                            // startActivity(intent);
+                        // '지도 보기' 버튼 추가
+                        Button mapButton = new Button(SearchActivity.this);
+                        mapButton.setText("지도 보기");
+                        mapButton.setOnClickListener(view -> {
+                            Intent intent = new Intent(SearchActivity.this, RoomDetailActivity.class);
+                            intent.putExtra("imagePath", room.getImage_path());
+                            intent.putExtra("roomName", room.getRoom_name());
+                            startActivity(intent);
                         });
 
                         // 행에 열 및 버튼 추가
                         row.addView(buildingText);
                         row.addView(roomText);
                         row.addView(floorText);
-                        row.addView(viewRoomButton); // 버튼 추가
+                        row.addView(mapButton); // 지도 보기 버튼 추가
 
                         roomInfoTable.addView(row);
                     }

@@ -47,6 +47,7 @@
         <activity android:name=".InmoonSelectFloorActivity"/>
         <activity android:name=".GonghakSelectFloorActivity"/>
         <activity android:name=".SaecheonSelectFloorActivity"/>
+        <activity android:name=".RoomDetailActivity" android:exported="true"/>
 
         <activity android:name=".UnitBus" />
         <activity android:name=".IksanBus" />

@@ -85,7 +85,9 @@ id prime_floor2
 id prime_floor3
 id prime_floor4
 id prime_floor5
+id roomImageView
 id roomInfoTable
+id roomNameTextView
 id seaCheon_floor1
 id seaCheon_floor2
 id seaCheon_floor3
@@ -107,6 +109,7 @@ layout activity_iksan_bus
 layout activity_main
 layout activity_navigation_method
 layout activity_out_bus
+layout activity_room_detail
 layout activity_room_info_gonghak
 layout activity_room_info_inmoon
 layout activity_room_info_prime

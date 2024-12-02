@@ -1,13 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:2:1-56:12
+ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:2:1-57:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\leeka\.gradle\caches\transforms-4\c800e4344c3e9e5adb0831f3ac3029d7\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\leeka\.gradle\caches\transforms-4\62fd14aeab2a2be015adaff503a8bee9\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\leeka\.gradle\caches\transforms-4\2086abf7de32b965d16d8c9e8d051f35\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\leeka\.gradle\caches\transforms-4\b53542a1580f7a109de67ee82c29603f\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\leeka\.gradle\caches\transforms-4\91530436bd65b509d81fa562c0fdaeec\transformed\glide-4.12.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\leeka\.gradle\caches\transforms-4\4b05808ba8bc07fcae83d9afe8c80ae7\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\leeka\.gradle\caches\transforms-4\23b71a5c655a31cd9c4dcc84d09fd8d3\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.8.0] C:\Users\leeka\.gradle\caches\transforms-4\953433ec8815f7778ed2b1973362d4e9\transformed\activity-1.8.0\AndroidManifest.xml:17:1-22:12
@@ -39,6 +40,8 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\leeka\.gradle\caches\tra
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\leeka\.gradle\caches\transforms-4\a50a49bb889b11dea7eb5ae80a54f360\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\leeka\.gradle\caches\transforms-4\47cc6d39a250c6b9f6ae3f05a5f221bf\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\leeka\.gradle\caches\transforms-4\3df8d0368ce920051c9a0f4befd630bf\transformed\gifdecoder-4.12.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\1a88828f436188151ec42bcd56d1f3c5\transformed\exifinterface-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\leeka\.gradle\caches\transforms-4\c178d65ed157f8ef58f85f8c2437acfd\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\leeka\.gradle\caches\transforms-4\5cd334a5c1a4a93b3218d6ad702e6196\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\leeka\.gradle\caches\transforms-4\c87b84ce0f0c9daa968ecb7d0ca8b737\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -60,12 +63,14 @@ ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\
 	android:name
 		ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:7:5-55:19
-INJECTED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:7:5-55:19
+ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:7:5-56:19
+INJECTED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:7:5-56:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\leeka\.gradle\caches\transforms-4\c800e4344c3e9e5adb0831f3ac3029d7\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\leeka\.gradle\caches\transforms-4\c800e4344c3e9e5adb0831f3ac3029d7\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\leeka\.gradle\caches\transforms-4\62fd14aeab2a2be015adaff503a8bee9\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\leeka\.gradle\caches\transforms-4\62fd14aeab2a2be015adaff503a8bee9\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\leeka\.gradle\caches\transforms-4\91530436bd65b509d81fa562c0fdaeec\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\leeka\.gradle\caches\transforms-4\91530436bd65b509d81fa562c0fdaeec\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\7062c8dcac6eea6f6e746dcaacce8c1b\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\leeka\.gradle\caches\transforms-4\8a3da937aa1d48c608eb09036d91fb3d\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:23:5-33:19
@@ -76,6 +81,8 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.g
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\leeka\.gradle\caches\transforms-4\40d2e1842f3709675954e8d464983b45\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\leeka\.gradle\caches\transforms-4\a50a49bb889b11dea7eb5ae80a54f360\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\leeka\.gradle\caches\transforms-4\a50a49bb889b11dea7eb5ae80a54f360\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\leeka\.gradle\caches\transforms-4\3df8d0368ce920051c9a0f4befd630bf\transformed\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\leeka\.gradle\caches\transforms-4\3df8d0368ce920051c9a0f4befd630bf\transformed\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\leeka\.gradle\caches\transforms-4\c178d65ed157f8ef58f85f8c2437acfd\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\leeka\.gradle\caches\transforms-4\c178d65ed157f8ef58f85f8c2437acfd\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
@@ -182,18 +189,24 @@ activity#com.example.campusFinder.SaecheonSelectFloorActivity
 ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:49:9-64
 	android:name
 		ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:49:19-62
+activity#com.example.campusFinder.RoomDetailActivity
+ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:50:9-79
+	android:exported
+		ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:50:54-77
+	android:name
+		ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:50:19-53
 activity#com.example.campusFinder.UnitBus
-ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:51:9-45
+ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:52:9-45
 	android:name
-		ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:51:19-42
+		ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:52:19-42
 activity#com.example.campusFinder.IksanBus
-ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:52:9-46
+ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:53:9-46
 	android:name
-		ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:52:19-43
+		ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:53:19-43
 activity#com.example.campusFinder.OutBus
-ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:53:9-44
+ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:54:9-44
 	android:name
-		ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:53:19-41
+		ADDED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml:54:19-41
 uses-sdk
 INJECTED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\LeeKangHyeon\myStudy\WKU\FullstackAcademy_2\AndroidStudioProjects\O2B2\O2B2-CampusFinder-app\CampusFinder\app\src\main\AndroidManifest.xml
@@ -206,6 +219,8 @@ MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\leeka\.gradl
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\leeka\.gradle\caches\transforms-4\2086abf7de32b965d16d8c9e8d051f35\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\leeka\.gradle\caches\transforms-4\b53542a1580f7a109de67ee82c29603f\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\leeka\.gradle\caches\transforms-4\b53542a1580f7a109de67ee82c29603f\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\leeka\.gradle\caches\transforms-4\91530436bd65b509d81fa562c0fdaeec\transformed\glide-4.12.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\leeka\.gradle\caches\transforms-4\91530436bd65b509d81fa562c0fdaeec\transformed\glide-4.12.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\leeka\.gradle\caches\transforms-4\4b05808ba8bc07fcae83d9afe8c80ae7\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\leeka\.gradle\caches\transforms-4\4b05808ba8bc07fcae83d9afe8c80ae7\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\leeka\.gradle\caches\transforms-4\23b71a5c655a31cd9c4dcc84d09fd8d3\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
@@ -268,6 +283,10 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\leeka\.gradle\cach
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\leeka\.gradle\caches\transforms-4\a50a49bb889b11dea7eb5ae80a54f360\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\leeka\.gradle\caches\transforms-4\47cc6d39a250c6b9f6ae3f05a5f221bf\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\leeka\.gradle\caches\transforms-4\47cc6d39a250c6b9f6ae3f05a5f221bf\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\leeka\.gradle\caches\transforms-4\3df8d0368ce920051c9a0f4befd630bf\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\leeka\.gradle\caches\transforms-4\3df8d0368ce920051c9a0f4befd630bf\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\1a88828f436188151ec42bcd56d1f3c5\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\leeka\.gradle\caches\transforms-4\1a88828f436188151ec42bcd56d1f3c5\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\leeka\.gradle\caches\transforms-4\c178d65ed157f8ef58f85f8c2437acfd\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\leeka\.gradle\caches\transforms-4\c178d65ed157f8ef58f85f8c2437acfd\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\leeka\.gradle\caches\transforms-4\5cd334a5c1a4a93b3218d6ad702e6196\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
