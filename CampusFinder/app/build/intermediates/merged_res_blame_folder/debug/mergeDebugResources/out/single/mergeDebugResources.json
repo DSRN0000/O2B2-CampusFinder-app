@@ -4,12 +4,12 @@
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\drawable\\inbus1.png"
     },
     {
-        "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\layout_fragment_prime_floor_1.xml.flat",
-        "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\layout\\fragment_prime_floor_1.xml"
-    },
-    {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\layout_activity_room_info_saecheon.xml.flat",
         "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\layout\\activity_room_info_saecheon.xml"
+    },
+    {
+        "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\layout_fragment_prime_floor_1.xml.flat",
+        "source": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-main-6:\\layout\\fragment_prime_floor_1.xml"
     },
     {
         "merged": "C:\\Users\\leeka\\.gradle\\daemon\\8.7\\com.example.campusFinder.app-debug-4:\\layout_activity_navigation_method.xml.flat",
