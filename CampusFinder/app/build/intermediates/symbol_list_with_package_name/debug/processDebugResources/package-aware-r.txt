@@ -3193,6 +3193,7 @@ id btnSearchPath
 id btn_hellobus
 id btn_outbound_routes
 id btn_pickup_locations
+id buildingNameTextView
 id button
 id buttonPanel
 id cache_measures
@@ -3485,6 +3486,7 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id roomFloorTextView
 id roomImageView
 id roomInfoTable
 id roomNameTextView

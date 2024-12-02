@@ -30,12 +30,24 @@ public class RoomDetailActivity extends AppCompatActivity {
         // XML에서 뷰 연결
         ImageButton backButton = findViewById(R.id.backButton);
         roomImageView = findViewById(R.id.roomImageView);
+
+
+        TextView buildingNameTextView = findViewById(R.id.buildingNameTextView);
+        TextView roomFloorTextView = findViewById(R.id.roomFloorTextView);
+
+
         TextView roomNameTextView = findViewById(R.id.roomNameTextView);
 
         // Intent로 전달된 데이터 가져오기
         String imagePath = getIntent().getStringExtra("imagePath");
+        String buildingName = getIntent().getStringExtra("buildingName");
+        String roomFloor = getIntent().getStringExtra("roomFloor");
         String roomName = getIntent().getStringExtra("roomName");
 
+        // 빌딩 이름
+        buildingNameTextView.setText(buildingName);
+        // 빌딩 층
+        roomFloorTextView.setText(roomFloor);
         // Room Name 표시
         roomNameTextView.setText(roomName);
 

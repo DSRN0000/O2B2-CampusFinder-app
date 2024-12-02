@@ -58,6 +58,7 @@ id btnSearchPath
 id btn_hellobus
 id btn_outbound_routes
 id btn_pickup_locations
+id buildingNameTextView
 id button
 id currentMonth
 id floor1Button
@@ -85,6 +86,7 @@ id prime_floor2
 id prime_floor3
 id prime_floor4
 id prime_floor5
+id roomFloorTextView
 id roomImageView
 id roomInfoTable
 id roomNameTextView

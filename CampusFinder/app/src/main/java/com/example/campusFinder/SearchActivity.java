@@ -83,6 +83,8 @@ public class SearchActivity extends AppCompatActivity {
                         mapButton.setOnClickListener(view -> {
                             Intent intent = new Intent(SearchActivity.this, RoomDetailActivity.class);
                             intent.putExtra("imagePath", room.getImage_path());
+                            intent.putExtra("buildingName",room.getBuilding_name());
+                            intent.putExtra("roomFloor",room.getRoom_floor());
                             intent.putExtra("roomName", room.getRoom_name());
                             startActivity(intent);
                         });
