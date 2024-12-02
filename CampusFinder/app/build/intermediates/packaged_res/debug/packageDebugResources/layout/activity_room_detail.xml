@@ -4,6 +4,25 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="뒤로 가기 버튼"
+        android:layout_gravity="start" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Campus Finder Logo"
+        android:layout_gravity="center_horizontal" />
+
     <!-- 강의실 이름 -->
     <TextView
         android:id="@+id/roomNameTextView"
