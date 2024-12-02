@@ -1,4 +1,4 @@
-#Sat Nov 30 22:12:32 KST 2024
+#Mon Dec 02 13:09:55 KST 2024
 base.0=C\:\\LeeKangHyeon\\myStudy\\WKU\\FullstackAcademy_2\\AndroidStudioProjects\\O2B2\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\LeeKangHyeon\\myStudy\\WKU\\FullstackAcademy_2\\AndroidStudioProjects\\O2B2\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\LeeKangHyeon\\myStudy\\WKU\\FullstackAcademy_2\\AndroidStudioProjects\\O2B2\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex

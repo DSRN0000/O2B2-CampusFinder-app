@@ -78,10 +78,24 @@ public class SearchActivity extends AppCompatActivity {
                         // 층 열
                         TextView floorText = createCell(room.getRoom_floor());
 
-                        // 행에 열 추가
+                        // '강의실 보기' 버튼 추가
+                        Button viewRoomButton = new Button(SearchActivity.this);
+                        viewRoomButton.setText("강의실 보기");
+                        viewRoomButton.setOnClickListener(view -> {
+                            // 버튼 클릭 시 호출되는 코드 (강의실 세부 정보 표시)
+                            Toast.makeText(SearchActivity.this, room.getRoom_name() + " 상세보기", Toast.LENGTH_SHORT).show();
+
+                            // 예시: 강의실 상세 화면으로 이동
+                            // Intent intent = new Intent(SearchActivity.this, RoomDetailActivity.class);
+                            // intent.putExtra("roomId", room.getRoom_id()); // ID 전달
+                            // startActivity(intent);
+                        });
+
+                        // 행에 열 및 버튼 추가
                         row.addView(buildingText);
                         row.addView(roomText);
                         row.addView(floorText);
+                        row.addView(viewRoomButton); // 버튼 추가
 
                         roomInfoTable.addView(row);
                     }
