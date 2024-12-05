@@ -34,13 +34,13 @@
 <img src="img/academicCalendar.gif" alt="학사일정 페이지" width="300">
 <img src="img/findClassroom.gif" alt="프라임관 강의실 찾기 페이지" width="300">
 
-### **시내 통학버스 & 시외 통학버스**
-<img src="img/bus.gif" alt="시내 통학버스" width="300">  
-<img src="img/outbus.gif" alt="시외 통학버스" width="300">
-
 ### **건물 층별 평면도**
 <img src="img/primeSelect.gif" alt="프라임관 선택 페이지" width="300">  
 <img src="img/prime.gif" alt="프라임관 평면도 페이지" width="300">
+
+### **시내 통학버스 & 시외 통학버스**
+<img src="img/bus.gif" alt="시내 통학버스" width="300">  
+<img src="img/outbus.gif" alt="시외 통학버스" width="300">
 
 </div>
 
