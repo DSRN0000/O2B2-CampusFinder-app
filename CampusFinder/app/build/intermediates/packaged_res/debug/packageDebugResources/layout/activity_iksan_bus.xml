@@ -34,34 +34,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- 텍스트 아래에 위치한 버튼 왼쪽 정렬 -->
+
+
+    <!-- 스크롤 뷰 추가 -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
         android:text="익산역/터미널 방면(무료운행)"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView" />
 
-    <!-- 텍스트 아래에 위치한 버튼 왼쪽 정렬 -->
     <Button
         android:id="@+id/button"
+        style="@style/CustomButton"
         android:layout_width="180dp"
         android:layout_height="54dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="8dp"
-        style="@style/CustomButton"
+        android:backgroundTint="#FDD800"
         android:text="운행노선 지도로 보기>"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
-
-
-
-    <!-- 스크롤 뷰 추가 -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -76,8 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:stretchColumns="1"
-            android:padding="16dp"
-            android:background="#d7e3c5">
+            android:padding="16dp">
 
 
             <HorizontalScrollView
@@ -88,8 +88,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:stretchColumns="1"
-                    android:padding="16dp"
-                    android:background="#d7e3c5">
+                    android:padding="16dp">
                     <!-- Header Row -->
                     <TableRow>
                         <TextView
@@ -98,8 +97,8 @@
                             android:padding="8dp"
                             android:text="승차장소"
                             android:textSize="16sp"
-                            android:background="#4C8C2A"
-                            android:textColor="#ffffff"
+                            android:background="#FBC02D"
+                            android:textColor="#000000"
                             android:gravity="center" />
 
                         <TextView
@@ -108,8 +107,8 @@
                             android:padding="8dp"
                             android:text="오전"
                             android:textSize="16sp"
-                            android:background="#4C8C2A"
-                            android:textColor="#ffffff"
+                            android:background="#FBC02D"
+                            android:textColor="#000000"
                             android:gravity="center"
                             android:layout_span="4" />
 
@@ -122,7 +121,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text=""
-                            android:background="#d7e3c5" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -130,7 +129,7 @@
                             android:padding="8dp"
                             android:text="1회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -138,7 +137,7 @@
                             android:padding="8dp"
                             android:text="2회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -146,7 +145,7 @@
                             android:padding="8dp"
                             android:text="3회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -154,7 +153,7 @@
                             android:padding="8dp"
                             android:text="4회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1" />
                     </TableRow>
 
                     <!-- Data Rows -->
@@ -164,7 +163,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="출발(정문 통학버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -205,7 +204,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="익산역 앞(시내버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -246,7 +245,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="버스터미널(별밤 무인호텔 앞)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -287,7 +286,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="익산역 건너편(동아의원 앞)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -328,7 +327,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="도착(정문 통학버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -373,8 +372,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:stretchColumns="1"
-                    android:padding="16dp"
-                    android:background="#d7e3c5">
+                    android:padding="16dp">
 
 
 
@@ -386,8 +384,8 @@
                             android:padding="8dp"
                             android:text="승차장소"
                             android:textSize="16sp"
-                            android:background="#4C8C2A"
-                            android:textColor="#ffffff"
+                            android:background="#FBC02D"
+                            android:textColor="#000000"
                             android:gravity="center" />
 
                         <TextView
@@ -396,8 +394,8 @@
                             android:padding="8dp"
                             android:text="오후"
                             android:textSize="16sp"
-                            android:background="#4C8C2A"
-                            android:textColor="#ffffff"
+                            android:background="#FBC02D"
+                            android:textColor="#000000"
                             android:gravity="center"
                             android:layout_span="5" />
                     </TableRow>
@@ -409,7 +407,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text=""
-                            android:background="#d7e3c5" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -417,7 +415,7 @@
                             android:padding="8dp"
                             android:text="1회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -425,7 +423,7 @@
                             android:padding="8dp"
                             android:text="2회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -433,7 +431,7 @@
                             android:padding="8dp"
                             android:text="3회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -441,7 +439,7 @@
                             android:padding="8dp"
                             android:text="4회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -449,7 +447,7 @@
                             android:padding="8dp"
                             android:text="5회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1" />
                     </TableRow>
 
                     <!-- Data Rows -->
@@ -459,7 +457,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="출발(정문 통학버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -508,7 +506,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="익산역 앞(시내버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -557,7 +555,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="버스터미널(별밤 무인호텔 앞)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -606,7 +604,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="익산역 건너편(동아의원 앞)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -657,7 +655,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="도착(정문 통학버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -738,9 +736,6 @@
                 android:gravity="center" />
 
         </TableLayout>
-
-
-
 
     </ScrollView>
 
