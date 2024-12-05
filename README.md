@@ -1,5 +1,5 @@
 # 🏫 **CampusFinder**
-![alt text](CampusFinderLogo.png)
+![alt text](img/CampusFinderLogo.png)
 
 ## **📌 기획 배경**  
 대학교는 많은 건물들로 이루어져 있으며, 강의실을 찾기 위해 종이로 만들어진 위치 안내도나 1층에 부착된 도면을 참고해야 하는 번거로움이 있습니다.<br>  
