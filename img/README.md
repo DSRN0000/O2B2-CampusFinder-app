@@ -14,25 +14,25 @@
 ## **실행 화면**
 
 #### 스플래쉬 화면
-![스플래쉬 화면](img/splash.gif)
+![스플래쉬 화면](splash.gif)
 
 #### 학사일정 페이지
-![학사일정 페이지](img/academicCalendar.gif)
+![학사일정 페이지](academicCalendar.gif)
 
 #### 통학버스 페이지
 
 ##### 시내 통학버스
-![시내통학버스 페이지](img/bus.gif)
+![시내통학버스 페이지](bus.gif)
 
 ##### 시외 통학버스
-![시외통학버스 페이지](img/outbus.gif)
+![시외통학버스 페이지](outbus.gif)
 
 #### 건물 층별 평면도
-![프라임관선택 페이지](img/primeSelect.gif)
-![프라임관 평면도 페이지](img/prime.gif)
+![프라임관선택 페이지](primeSelect.gif)
+![프라임관 평면도 페이지](prime.gif)
 
 #### 건물 세부 평면도
-![프라임관 강의실 찾기 페이지](img/findClassroom.gif)
+![프라임관 강의실 찾기 페이지](findClassroom.gif)
 
 
 
