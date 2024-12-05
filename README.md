@@ -14,7 +14,7 @@
 ## **실행 화면**
 
 #### 스플래쉬 화면
-![스플래쉬 화면](img/splash.gif)
+![스플래쉬 화면](img/splashPage.gif)
 
 #### 학사일정 페이지
 ![학사일정 페이지](img/academicCalendar.gif)
