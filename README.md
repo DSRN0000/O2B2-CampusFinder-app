@@ -30,7 +30,7 @@
 ### **스플래쉬 화면**
 <img src="img/splashPage.gif" alt="스플래쉬 화면" width="300">
 
-### **건물 세부 평면도 & 학사일정 페이지**
+### **학사일정 페이지 & 건물 세부 평면도**
 <img src="img/academicCalendar.gif" alt="학사일정 페이지" width="300">
 <img src="img/findClassroom.gif" alt="프라임관 강의실 찾기 페이지" width="300">
 
