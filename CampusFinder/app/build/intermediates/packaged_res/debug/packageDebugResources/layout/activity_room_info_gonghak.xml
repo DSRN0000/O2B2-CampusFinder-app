@@ -47,37 +47,49 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/background_box_floor"
-            android:text="1층" />
+            android:text="1층"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/background_box_floor"/>
+
+
+        <!--            android:background="@drawable/background_box_floor"-->
 
         <android.widget.Button
             android:id="@+id/floor2Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/background_box_floor"
-            android:text="2층" />
+            android:text="2층"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/background_box_floor"/>
 
-        <Button
+        <android.widget.Button
             android:id="@+id/floor3Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="3층" />
+            android:text="3층"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/background_box_floor"/>
 
-        <Button
+        <android.widget.Button
             android:id="@+id/floor4Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="4층" />
+            android:text="4층"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/background_box_floor"/>
 
-        <Button
+        <android.widget.Button
             android:id="@+id/floor5Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5층" />
+            android:text="5층"
+
+            android:layout_marginRight="5dp"
+            android:background="@drawable/background_box_floor"/>
     </LinearLayout>
     <!-- 프래그먼트를 로드할 FrameLayout -->
     <FrameLayout
