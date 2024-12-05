@@ -20,7 +20,7 @@
 ![학사일정 페이지](academicCalendar.gif)
 
 #### 통학버스 페이지
-![통학버스 페이지](bus.gif)
+![통학버스 페이지](bus.mp4)
 
 
 
