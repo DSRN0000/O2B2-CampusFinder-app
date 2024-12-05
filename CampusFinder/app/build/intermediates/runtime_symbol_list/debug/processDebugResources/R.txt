@@ -2940,6 +2940,7 @@ int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable background_box 0x7f07007a
 int drawable background_box1 0x7f07007b
+int drawable background_box_floor 0x7f070108
 int drawable border_frame 0x7f07007c
 int drawable box_border 0x7f07007d
 int drawable btn_checkbox_checked_mtrl 0x7f07007e

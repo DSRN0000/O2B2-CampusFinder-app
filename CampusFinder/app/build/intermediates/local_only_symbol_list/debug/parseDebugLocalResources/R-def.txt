@@ -4,6 +4,7 @@ color black
 color white
 drawable background_box
 drawable background_box1
+drawable background_box_floor
 drawable border_frame
 drawable box_border
 drawable bus
