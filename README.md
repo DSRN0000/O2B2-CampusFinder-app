@@ -6,9 +6,9 @@
 ---
 
 ## **📌 기획 배경**  
-대학교는 많은 건물들로 이루어져 있으며, 강의실을 찾기 위해 종이로 만들어진 위치 안내도나 1층에 부착된 도면을 참고해야 하는 번거로움이 있습니다.<br>
 
-그래서 다음과 같은 문제점들이 존재합니다  
+대학교는 많은 건물들로 이루어져 있으며, 강의실을 찾기 위해 종이로 만들어진 위치 안내도나 1층에 부착된 도면을 참고해야 하는 번거로움이 있습니다.<br>  
+그래서 다음과 같은 문제점들이 존재합니다
 - 건물 내부 안내도가 부착되지 않은 경우가 많음  
 - 특정 위치에만 도면이 안내되어 있어 다른 출입구로 들어오는 사용자들이 어려움을 겪음  
 
@@ -23,24 +23,36 @@
 
 ---
 
-## **📋 실행 화면**  
+## **✨ 기능**
 
 <div align="center">
 
 ### **스플래쉬 화면**
 <img src="img/splashPage.gif" alt="스플래쉬 화면" width="300">
 
+---
+
 ### **학사일정 페이지 & 건물 세부 평면도**
-<img src="img/academicCalendar.gif" alt="학사일정 페이지" width="300">
-<img src="img/findClassroom.gif" alt="프라임관 강의실 찾기 페이지" width="300">
+<div>
+  <img src="img/academicCalendar.gif" alt="학사일정 페이지" width="300">
+  <img src="img/findClassroom.gif" alt="프라임관 강의실 찾기 페이지" width="300">
+</div>
+
+---
 
 ### **건물 층별 평면도**
-<img src="img/primeSelect.gif" alt="프라임관 선택 페이지" width="300">  
-<img src="img/prime.gif" alt="프라임관 평면도 페이지" width="300">
+<div>
+  <img src="img/primeSelect.gif" alt="프라임관 선택 페이지" width="300">
+  <img src="img/prime.gif" alt="프라임관 평면도 페이지" width="300">
+</div>
+
+---
 
 ### **시내 통학버스 & 시외 통학버스**
-<img src="img/bus.gif" alt="시내 통학버스" width="300">  
-<img src="img/outbus.gif" alt="시외 통학버스" width="300">
+<div>
+  <img src="img/bus.gif" alt="시내 통학버스" width="300">
+  <img src="img/outbus.gif" alt="시외 통학버스" width="300">
+</div>
 
 </div>
 
@@ -88,5 +100,5 @@
 - 인문관, 프라임관 세부 평면도 이미지 데이터 삽입  
 
 ### **[2024-12-05]**  
-- 시내 버스, 시외 버스 페이지 디자인 수정
-- 공학관, 프라임관, 인문관 1~5층 버튼 UI 변경
+- 시내 버스, 시외 버스 페이지 디자인 수정  
+- 공학관, 프라임관, 인문관 1~5층 버튼 UI 변경 
