@@ -2940,6 +2940,7 @@ int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable background_box 0x7f07007a
 int drawable background_box1 0x7f07007b
+int drawable background_box_floor 0x7f070108
 int drawable border_frame 0x7f07007c
 int drawable box_border 0x7f07007d
 int drawable btn_checkbox_checked_mtrl 0x7f07007e
@@ -2959,6 +2960,11 @@ int drawable design_password_eye 0x7f07008b
 int drawable design_snackbar_background 0x7f07008c
 int drawable findclass 0x7f07008d
 int drawable gonghak 0x7f07008e
+int drawable gonghak_floor1 0x7f070103
+int drawable gonghak_floor2 0x7f070104
+int drawable gonghak_floor3 0x7f070105
+int drawable gonghak_floor4 0x7f070106
+int drawable gonghak_floor5 0x7f070107
 int drawable gonghak_img 0x7f07008f
 int drawable ic_arrow_back_black_24 0x7f070090
 int drawable ic_back 0x7f070091
@@ -3193,6 +3199,7 @@ int id btnSearchPath 0x7f080071
 int id btn_hellobus 0x7f080072
 int id btn_outbound_routes 0x7f080073
 int id btn_pickup_locations 0x7f080074
+int id buildingNameTextView 0x7f08022e
 int id button 0x7f080075
 int id buttonPanel 0x7f080076
 int id cache_measures 0x7f080077
@@ -3302,7 +3309,13 @@ int id frost 0x7f0800de
 int id fullscreen_header 0x7f0800df
 int id ghost_view 0x7f0800e0
 int id ghost_view_holder 0x7f0800e1
+int id glide_custom_view_target_tag 0x7f08022b
 int id gone 0x7f0800e2
+int id gongHak_floor1 0x7f080221
+int id gongHak_floor2 0x7f080222
+int id gongHak_floor3 0x7f080223
+int id gongHak_floor4 0x7f080224
+int id gongHak_floor5 0x7f080225
 int id graph 0x7f0800e3
 int id graph_wrap 0x7f0800e4
 int id group_divider 0x7f0800e5
@@ -3325,6 +3338,11 @@ int id immediateStop 0x7f0800f5
 int id included 0x7f0800f6
 int id indeterminate 0x7f0800f7
 int id info 0x7f0800f8
+int id inmoon_floor1 0x7f08021c
+int id inmoon_floor2 0x7f08021d
+int id inmoon_floor3 0x7f08021e
+int id inmoon_floor4 0x7f08021f
+int id inmoon_floor5 0x7f080220
 int id invisible 0x7f0800f9
 int id inward 0x7f0800fa
 int id italic 0x7f0800fb
@@ -3474,7 +3492,10 @@ int id right 0x7f08018a
 int id rightToLeft 0x7f08018b
 int id right_icon 0x7f08018c
 int id right_side 0x7f08018d
+int id roomFloorTextView 0x7f08022f
+int id roomImageView 0x7f08022c
 int id roomInfoTable 0x7f08018e
+int id roomNameTextView 0x7f08022d
 int id rounded 0x7f08018f
 int id row_index_key 0x7f080190
 int id save_non_transition_alpha 0x7f080191
@@ -3487,6 +3508,11 @@ int id scrollIndicatorDown 0x7f080197
 int id scrollIndicatorUp 0x7f080198
 int id scrollView 0x7f080199
 int id scrollable 0x7f08019a
+int id seaCheon_floor1 0x7f080226
+int id seaCheon_floor2 0x7f080227
+int id seaCheon_floor3 0x7f080228
+int id seaCheon_floor4 0x7f080229
+int id seaCheon_floor5 0x7f08022a
 int id searchButton 0x7f08019b
 int id searchField 0x7f08019c
 int id search_badge 0x7f08019d
@@ -3736,6 +3762,7 @@ int layout activity_iksan_bus 0x7f0b001e
 int layout activity_main 0x7f0b001f
 int layout activity_navigation_method 0x7f0b0020
 int layout activity_out_bus 0x7f0b0021
+int layout activity_room_detail 0x7f0b008a
 int layout activity_room_info_gonghak 0x7f0b0022
 int layout activity_room_info_inmoon 0x7f0b0023
 int layout activity_room_info_prime 0x7f0b0024

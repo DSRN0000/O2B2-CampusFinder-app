@@ -34,34 +34,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- 텍스트 아래에 위치한 버튼 왼쪽 정렬 -->
+
+
+    <!-- 스크롤 뷰 추가 -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
         android:text="익산역/터미널 방면(무료운행)"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView" />
 
-    <!-- 텍스트 아래에 위치한 버튼 왼쪽 정렬 -->
     <Button
         android:id="@+id/button"
+        style="@style/CustomButton"
         android:layout_width="180dp"
         android:layout_height="54dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="8dp"
-        style="@style/CustomButton"
+        android:backgroundTint="#FDD800"
         android:text="운행노선 지도로 보기>"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView" />
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:textStyle="bold" />
 
-
-
-
-    <!-- 스크롤 뷰 추가 -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -76,8 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:stretchColumns="1"
-            android:padding="16dp"
-            android:background="#d7e3c5">
+            android:padding="16dp">
 
 
             <HorizontalScrollView
@@ -88,8 +89,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:stretchColumns="1"
-                    android:padding="16dp"
-                    android:background="#d7e3c5">
+                    android:padding="16dp">
                     <!-- Header Row -->
                     <TableRow>
                         <TextView
@@ -98,9 +98,10 @@
                             android:padding="8dp"
                             android:text="승차장소"
                             android:textSize="16sp"
-                            android:background="#4C8C2A"
-                            android:textColor="#ffffff"
-                            android:gravity="center" />
+                            android:background="#FBC02D"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -108,10 +109,11 @@
                             android:padding="8dp"
                             android:text="오전"
                             android:textSize="16sp"
-                            android:background="#4C8C2A"
-                            android:textColor="#ffffff"
+                            android:background="#FBC02D"
+                            android:textColor="#000000"
                             android:gravity="center"
-                            android:layout_span="4" />
+                            android:layout_span="4"
+                            android:textStyle="bold" />
 
                     </TableRow>
 
@@ -122,7 +124,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text=""
-                            android:background="#d7e3c5" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -130,7 +132,8 @@
                             android:padding="8dp"
                             android:text="1회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -138,7 +141,8 @@
                             android:padding="8dp"
                             android:text="2회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -146,7 +150,8 @@
                             android:padding="8dp"
                             android:text="3회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -154,7 +159,8 @@
                             android:padding="8dp"
                             android:text="4회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <!-- Data Rows -->
@@ -164,7 +170,8 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="출발(정문 통학버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -196,7 +203,8 @@
                             android:padding="8dp"
                             android:text="11:00"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <TableRow>
@@ -205,7 +213,8 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="익산역 앞(시내버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -213,7 +222,8 @@
                             android:padding="8dp"
                             android:text="8:23"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -221,7 +231,8 @@
                             android:padding="8dp"
                             android:text="9:00"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -229,7 +240,8 @@
                             android:padding="8dp"
                             android:text="10:00"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -237,7 +249,8 @@
                             android:padding="8dp"
                             android:text="11:10"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <TableRow>
@@ -246,7 +259,8 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="버스터미널(별밤 무인호텔 앞)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -254,7 +268,8 @@
                             android:padding="8dp"
                             android:text="8:28"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -262,7 +277,8 @@
                             android:padding="8dp"
                             android:text="9:05"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -270,7 +286,8 @@
                             android:padding="8dp"
                             android:text="10:05"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -278,7 +295,8 @@
                             android:padding="8dp"
                             android:text="11:15"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <TableRow>
@@ -287,7 +305,8 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="익산역 건너편(동아의원 앞)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -295,7 +314,8 @@
                             android:padding="8dp"
                             android:text="8:31"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -303,7 +323,8 @@
                             android:padding="8dp"
                             android:text="9:08"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -311,7 +332,8 @@
                             android:background="#ffffff"
                             android:gravity="center"
                             android:padding="8dp"
-                            android:text="10:09" />
+                            android:text="10:09"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -319,7 +341,8 @@
                             android:padding="8dp"
                             android:text="11:18"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <TableRow>
@@ -328,7 +351,8 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="도착(정문 통학버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -336,7 +360,8 @@
                             android:padding="8dp"
                             android:text="8:43"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -344,7 +369,8 @@
                             android:padding="8dp"
                             android:text="9:20"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -352,7 +378,8 @@
                             android:padding="8dp"
                             android:text="10:20"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -360,7 +387,8 @@
                             android:padding="8dp"
                             android:text="11:30"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
                     </TableRow>
                 </TableLayout>
             </HorizontalScrollView>
@@ -373,8 +401,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:stretchColumns="1"
-                    android:padding="16dp"
-                    android:background="#d7e3c5">
+                    android:padding="16dp">
 
 
 
@@ -386,9 +413,10 @@
                             android:padding="8dp"
                             android:text="승차장소"
                             android:textSize="16sp"
-                            android:background="#4C8C2A"
-                            android:textColor="#ffffff"
-                            android:gravity="center" />
+                            android:background="#FBC02D"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -396,10 +424,11 @@
                             android:padding="8dp"
                             android:text="오후"
                             android:textSize="16sp"
-                            android:background="#4C8C2A"
-                            android:textColor="#ffffff"
+                            android:background="#FBC02D"
+                            android:textColor="#000000"
                             android:gravity="center"
-                            android:layout_span="5" />
+                            android:layout_span="5"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <!-- Sub-header Row -->
@@ -409,7 +438,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text=""
-                            android:background="#d7e3c5" />
+                            android:background="#FFF8E1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -417,7 +446,8 @@
                             android:padding="8dp"
                             android:text="1회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -425,7 +455,8 @@
                             android:padding="8dp"
                             android:text="2회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -433,7 +464,8 @@
                             android:padding="8dp"
                             android:text="3회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -441,7 +473,8 @@
                             android:padding="8dp"
                             android:text="4회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -449,7 +482,8 @@
                             android:padding="8dp"
                             android:text="5회차"
                             android:gravity="center"
-                            android:background="#eaf1db" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <!-- Data Rows -->
@@ -459,7 +493,8 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="출발(정문 통학버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -467,7 +502,8 @@
                             android:padding="8dp"
                             android:text="13:00"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -475,7 +511,8 @@
                             android:padding="8dp"
                             android:text="14:00"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -483,7 +520,8 @@
                             android:padding="8dp"
                             android:text="15:00"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -491,7 +529,8 @@
                             android:padding="8dp"
                             android:text="16:00"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -499,7 +538,8 @@
                             android:padding="8dp"
                             android:text="17:00"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <TableRow>
@@ -508,7 +548,8 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="익산역 앞(시내버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -516,7 +557,8 @@
                             android:padding="8dp"
                             android:text="13:10"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -524,7 +566,8 @@
                             android:padding="8dp"
                             android:text="14:10"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -532,7 +575,8 @@
                             android:padding="8dp"
                             android:text="15:10"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -540,7 +584,8 @@
                             android:padding="8dp"
                             android:text="16:10"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -548,7 +593,8 @@
                             android:padding="8dp"
                             android:text="17:10"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <TableRow>
@@ -557,7 +603,8 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="버스터미널(별밤 무인호텔 앞)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -565,7 +612,8 @@
                             android:padding="8dp"
                             android:text="13:15"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -573,7 +621,8 @@
                             android:padding="8dp"
                             android:text="14:15"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -581,7 +630,8 @@
                             android:padding="8dp"
                             android:text="15:15"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -589,7 +639,8 @@
                             android:padding="8dp"
                             android:text="16:15"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -597,7 +648,8 @@
                             android:padding="8dp"
                             android:text="17:15"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <TableRow>
@@ -606,7 +658,8 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="익산역 건너편(동아의원 앞)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -614,7 +667,8 @@
                             android:padding="8dp"
                             android:text="13:18"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -622,7 +676,8 @@
                             android:padding="8dp"
                             android:text="14:18"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -630,7 +685,8 @@
                             android:padding="8dp"
                             android:text="15:18"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -638,7 +694,8 @@
                             android:padding="8dp"
                             android:text="16:18"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -646,7 +703,8 @@
                             android:padding="8dp"
                             android:text="17:18"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
                     </TableRow>
 
 
@@ -657,7 +715,8 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="도착(정문 통학버스 승강장)"
-                            android:background="#f4f9e9" />
+                            android:background="#FFF8E1"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -665,7 +724,8 @@
                             android:padding="8dp"
                             android:text="13:30"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -673,7 +733,8 @@
                             android:padding="8dp"
                             android:text="14:30"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -681,7 +742,8 @@
                             android:padding="8dp"
                             android:text="15:30"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -689,7 +751,8 @@
                             android:padding="8dp"
                             android:text="16:30"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -697,7 +760,8 @@
                             android:padding="8dp"
                             android:text="17:30"
                             android:gravity="center"
-                            android:background="#ffffff" />
+                            android:background="#ffffff"
+                            android:textStyle="bold" />
                     </TableRow>
 
                 </TableLayout>
@@ -738,9 +802,6 @@
                 android:gravity="center" />
 
         </TableLayout>
-
-
-
 
     </ScrollView>
 

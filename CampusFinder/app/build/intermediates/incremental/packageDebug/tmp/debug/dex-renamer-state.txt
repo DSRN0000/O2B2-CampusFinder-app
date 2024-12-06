@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 #Thu Nov 28 21:56:34 KST 2024
+=======
+#Thu Dec 05 17:31:02 KST 2024
+>>>>>>> hyeon
 base.0=C\:\\LeeKangHyeon\\myStudy\\WKU\\FullstackAcademy_2\\AndroidStudioProjects\\O2B2\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\LeeKangHyeon\\myStudy\\WKU\\FullstackAcademy_2\\AndroidStudioProjects\\O2B2\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\LeeKangHyeon\\myStudy\\WKU\\FullstackAcademy_2\\AndroidStudioProjects\\O2B2\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+base.3=C\:\\LeeKangHyeon\\myStudy\\WKU\\FullstackAcademy_2\\AndroidStudioProjects\\O2B2\\O2B2-CampusFinder-app\\CampusFinder\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=7/classes.dex
+path.3=classes2.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex
+renamed.3=classes4.dex

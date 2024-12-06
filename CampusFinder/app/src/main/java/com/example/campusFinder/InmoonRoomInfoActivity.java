@@ -39,5 +39,6 @@ public class InmoonRoomInfoActivity extends AppCompatActivity {
         fragmentManager.beginTransaction()
                 .replace(R.id.mapFrame, fragment)
                 .commit();
+
     }
 }

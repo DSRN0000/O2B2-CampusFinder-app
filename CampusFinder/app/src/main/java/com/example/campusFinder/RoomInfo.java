@@ -5,6 +5,7 @@ public class RoomInfo {
     private String building_number;
     private String room_name;
     private String room_floor;
+    private String image_path;
 
     // Getter 메서드
     public String getBuilding_name() {
@@ -21,5 +22,12 @@ public class RoomInfo {
 
     public String getRoom_floor() {
         return room_floor;
+    }
+    public String getImage_path(){
+        return image_path;
+    }
+    public void setImage_path(String imagePath) {
+
+        this.image_path = imagePath;
     }
 }

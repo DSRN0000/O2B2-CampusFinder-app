@@ -2941,6 +2941,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable background_box
 drawable background_box1
+drawable background_box_floor
 drawable border_frame
 drawable box_border
 drawable btn_checkbox_checked_mtrl
@@ -2960,6 +2961,11 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable findclass
 drawable gonghak
+drawable gonghak_floor1
+drawable gonghak_floor2
+drawable gonghak_floor3
+drawable gonghak_floor4
+drawable gonghak_floor5
 drawable gonghak_img
 drawable ic_arrow_back_black_24
 drawable ic_back
@@ -3194,6 +3200,7 @@ id btnSearchPath
 id btn_hellobus
 id btn_outbound_routes
 id btn_pickup_locations
+id buildingNameTextView
 id button
 id buttonPanel
 id cache_measures
@@ -3303,7 +3310,13 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
+id gongHak_floor1
+id gongHak_floor2
+id gongHak_floor3
+id gongHak_floor4
+id gongHak_floor5
 id graph
 id graph_wrap
 id group_divider
@@ -3326,6 +3339,11 @@ id immediateStop
 id included
 id indeterminate
 id info
+id inmoon_floor1
+id inmoon_floor2
+id inmoon_floor3
+id inmoon_floor4
+id inmoon_floor5
 id invisible
 id inward
 id italic
@@ -3475,7 +3493,10 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id roomFloorTextView
+id roomImageView
 id roomInfoTable
+id roomNameTextView
 id rounded
 id row_index_key
 id save_non_transition_alpha
@@ -3488,6 +3509,11 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id seaCheon_floor1
+id seaCheon_floor2
+id seaCheon_floor3
+id seaCheon_floor4
+id seaCheon_floor5
 id searchButton
 id searchField
 id search_badge
@@ -3737,6 +3763,7 @@ layout activity_iksan_bus
 layout activity_main
 layout activity_navigation_method
 layout activity_out_bus
+layout activity_room_detail
 layout activity_room_info_gonghak
 layout activity_room_info_inmoon
 layout activity_room_info_prime
