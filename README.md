@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🏫 **CampusFinder**
 <div align="center">
   <img src="img/CampusFinderLogo.png" alt="CampusFinder Logo" width="300">
