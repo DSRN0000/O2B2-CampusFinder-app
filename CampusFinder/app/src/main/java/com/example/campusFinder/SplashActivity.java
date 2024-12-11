@@ -22,8 +22,5 @@ public class SplashActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }, SPLASH_DELAY);
-
-        // 좌표값 계산 해서 framelayout으로 좌표 값에 대해 색칠 해준다.
-        // 강의실 별로 색칠 해서 노가다 작업
     }
 }
