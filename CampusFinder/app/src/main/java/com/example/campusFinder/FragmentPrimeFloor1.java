@@ -45,7 +45,7 @@ public class FragmentPrimeFloor1 extends Fragment {
         return view;
     }
 
-    // ScaleGestureDetector의 리스너 (확대/축소)
+    // ScaleGestureDetector의 리스너 (확대/축소)  터치 제스처 중 확대/축소 동작을 감지
     private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener {
         @Override
         public boolean onScale(ScaleGestureDetector detector) {
@@ -58,7 +58,7 @@ public class FragmentPrimeFloor1 extends Fragment {
         }
     }
 
-    // GestureDetector의 리스너 (상하좌우 이동)
+    // GestureDetector의 리스너 (상하좌우 이동) 이미지 이동을 감지
     private class GestureListener extends GestureDetector.SimpleOnGestureListener {
         @Override
         public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {

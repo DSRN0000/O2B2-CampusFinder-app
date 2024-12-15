@@ -15,4 +15,5 @@ public interface ApiService {
     // 강의실 정보 검색
     @GET("/room-info")
     Call<List<RoomInfo>> getRoomInfo(@Query("search") String searchQuery);
+    
 }
