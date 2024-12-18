@@ -5,6 +5,7 @@ color white
 drawable background_box
 drawable background_box1
 drawable background_box_floor
+drawable backicon
 drawable border_frame
 drawable box_border
 drawable bus
@@ -20,6 +21,7 @@ drawable gonghak_img
 drawable ic_back
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable iksan
 drawable iksan_bus
 drawable iksan_bus2
 drawable iksan_bus3
@@ -33,6 +35,7 @@ drawable inmoon_floor5
 drawable inmoon_img
 drawable logo
 drawable o2b2
+drawable outbus
 drawable outbus1
 drawable prime
 drawable prime2
@@ -42,8 +45,10 @@ drawable prime_floor3
 drawable prime_floor4
 drawable prime_floor5
 drawable rect_button_background
+drawable room
 drawable saecheon
 drawable saecheon_img
+drawable search
 drawable searchchoice1
 drawable searchchoice2
 id academicScheduleTable

@@ -13,10 +13,10 @@
     <ImageButton
         android:id="@+id/backButton"
 
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_back"
+        android:src="@drawable/backicon"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="뒤로 가기 버튼"
         android:layout_gravity="start" />
@@ -57,14 +57,10 @@
                 android:id="@+id/btnInbus"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="#FFFFA7"
+                android:background="@drawable/iksan"
                 android:padding="20dp">
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/inbus1" />
+
             </FrameLayout>
 
             <TextView
@@ -89,14 +85,9 @@
                 android:id="@+id/btnOutbus"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="#FFFFA7"
+                android:background="@drawable/outbus"
                 android:padding="20dp">
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/outbus1" />
             </FrameLayout>
 
             <TextView

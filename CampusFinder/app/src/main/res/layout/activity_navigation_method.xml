@@ -12,11 +12,11 @@
 
         <ImageButton
             android:id="@+id/btnBack"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_back" />
+            android:src="@drawable/backicon" />
 
         <ImageView
             android:layout_width="250dp"
@@ -55,7 +55,7 @@
                 android:id="@+id/btnPinpoint"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="#8CD9FF"
+                android:background="@drawable/room"
                 android:padding="20dp">
 
                 <ImageView
@@ -87,14 +87,10 @@
                 android:id="@+id/btnSearchPath"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="#8CD9FF"
+                android:background="@drawable/search"
                 android:padding="20dp">
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/searchchoice2" />
+
             </FrameLayout>
 
             <TextView

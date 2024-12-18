@@ -28,7 +28,7 @@
         android:layout_marginTop="16dp"
         android:background="?attr/selectableItemBackground"
         android:contentDescription="뒤로가기 버튼"
-        android:src="@drawable/ic_back"
+        android:src="@drawable/backicon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
